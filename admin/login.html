@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录界面</title>
+  <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+  <div class="login">
+    <form class="login-wrap">
+      <img class="avatar" src="../assets/img/mao.jpg">
+      <!-- 有错误信息时展示 -->
+      <div id="tip" class="alert alert-danger" style="display:none;">
+        <strong>错误！</strong> 用户名或密码错误！
+      </div>
+      <div class="form-group">
+        <label for="email" class="sr-only"></label>
+        <input id="email" type="email" class="form-control"
+          placeholder="账号" autofocus>
+      </div>
+      <div class="form-group">
+        <label for="password" class="sr-only"></label>
+        <input id="password" type="password" class="form-control" placeholder="密码">
+      </div>
+      <a id="login" class="btn btn-primary btn-block" href="javascript:">登 录</a>
+    </form>
+  </div>
+  <script src="../assets/vendors/jquery/jquery.min.js"></script>
+  <script src="../assets/vendors/md5.js"></script>
+  <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+</body>
+<script>
+  //声明基准请求路径
+  // const baseUrl='www://127.0.0.1:80/'
+
+
+  $('#email').keyup(function () {
+    $('#email').val($('#email').val().replace(/[^\a-\z\A-\Z0-9]/g,''))
+  })
+  $('#password').keyup(function () {
+    $('#password').val($('#password').val().replace(/[^\a-\z\A-\Z0-9]/g,''))
+  })
+  $('#login').on('click', function () {
+    if (!$('#email').val().trim())  return
+    if (!$('#password').val().trim())  return
+    const newPassword=$.md5( $('#password').val()+'ZHOUQUANAJIANG')
+    console.log(newPassword);
+    // console.log($('#email').val(),$('#password').val());
+    
+    $.ajax({
+      url:'./api/doLogin.php',
+      type:'post',
+      dataType:'json',
+      data:{username:$('#email').val(),password:newPassword},
+      success:function(obj){
+        console.log(obj);
+        if(obj.code==0){
+          location='index.html'
+        }else{
+          $('#tip').show()
+          setTimeout(function(){
+            $('#tip').hide()
+          },3000)
+         
+        }
+      }
+    })
+  })
+</script>
+
+</html>

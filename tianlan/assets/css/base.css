@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: underline;
+}
+html,
+body {
+    position: relative;
+    background-color: #000000;
+}
+
+#basement {
+    width: 7.2rem;
+    margin: 0 auto;
+}
+header {
+    height: .8rem;
+    
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+}
+.navbar-brand {
+    text-align: center;
+    /* padding-top: 10px; */
+    /* padding: 0; */
+    width: .32rem;
+}
+
+.navbar-brand i {
+    font-size: .16rem;
+    margin-top: -0.03rem
+}
+
+.navbar-nav {
+    width: 5.7rem;
+    background-color: #fdfcff;
+}
+#navbar-example {
+    margin-bottom: .03rem;
+}
+.sousuo2{
+    margin-top: .121rem;
+    margin-left: .9rem;
+    margin-right: 1.4rem;
+}
+.sousuo-ipt {
+    background: #ffffff;
+    width: 200px;
+}
+
+#carousel-example-generic {
+    width: 100%;
+}
+
+#carousel-example-generic img {
+    /* width: 11.55rem; */
+    height: 2rem;
+}
+
+.conter {
+    width: 100%;
+    background-color: #e5e5e5;
+    overflow: hidden;
+    
+}
+
+.conter-left {
+    /* width: 1.24rem; */
+    border: 1px solid black;
+    /* height: 1000px; */
+    margin-left: .11rem;
+    margin-top: .22rem;
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    /* float: left; */
+}
+
+.conter-left span {
+    line-height: .18rem;
+    display: block;
+}
+.conter-left-top-a{
+    line-height: .18rem;
+    display: block;
+}
+
+.conter-left-top {
+    height: .2rem;
+    background-image: url('../image/cpflr_h3.png');
+    color: white;
+    line-height: .2rem;
+}
+
+.catrgory {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.catrgory li {
+    padding: 10px 30px;
+
+}
+
+.catrgory li a {
+    font-size: 0.08rem;
+    color: #333333;
+
+}
+
+/* .catrgory li a:hover {
+    text-decoration: underline
+} */
+
+.you {
+    margin-top: .15rem;
+}
+
+.conter-right {
+    padding-top: .15rem
+}
+
+
+
+/* footer */
+footer{
+    background-color: #1c1c1c;
+    padding: 30px;
+}
+footer .row{
+    /* height: 270px; */
+    
+    /* width: 100%; */
+    /* position: absolute; */
+    /* bottom: -270px; */
+    
+    padding-left: .8rem;
+    color: #ffffff
+}
+footer h4{
+    font-size: .14rem;
+}
+footer li a{
+    font-size: .08rem;
+    line-height: 27px;
+    color: #b5b5b5;
+    margin-left: 10px;
+}
+footer .row>div{
+    overflow: hidden;
+}
