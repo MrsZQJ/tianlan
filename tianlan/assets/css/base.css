@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
+
 html,
 body {
     position: relative;
@@ -15,6 +17,7 @@ body {
     width: 1300px;
     margin: 0 auto;
 }
+
 header {
     height: .8rem;
     overflow: hidden;
@@ -23,6 +26,7 @@ header {
 header img {
     width: 100%;
 }
+
 .navbar-brand {
     text-align: center;
     /* padding-top: 10px; */
@@ -38,14 +42,17 @@ header img {
 .navbar-nav {
     background-color: #fdfcff;
 }
+
 #navbar-example {
     margin-bottom: .03rem;
 }
-.sousuo2{
+
+.sousuo2 {
     margin-top: .121rem;
     margin-left: .9rem;
     margin-right: 1.4rem;
 }
+
 .sousuo-ipt {
     background: #ffffff;
     width: 200px;
@@ -64,7 +71,7 @@ header img {
     width: 100%;
     background-color: #e5e5e5;
     overflow: hidden;
-    
+
 }
 
 .conter-left {
@@ -83,7 +90,8 @@ header img {
     line-height: .18rem;
     display: block;
 }
-.conter-left-top-a{
+
+.conter-left-top-a {
     line-height: .18rem;
     display: block;
 }
@@ -128,29 +136,33 @@ header img {
 
 
 /* footer */
-footer{
+footer {
     background-color: #1c1c1c;
     padding: .3rem;
 }
-footer .row{
+
+footer .row {
     /* height: 270px; */
-    
+
     /* width: 100%; */
     /* position: absolute; */
     /* bottom: -270px; */
-    
+
     padding-left: .8rem;
     color: #ffffff
 }
-footer h4{
+
+footer h4 {
     font-size: .14rem;
 }
-footer li a{
+
+footer li a {
     font-size: .08rem;
     line-height: 27px;
     color: #b5b5b5;
     margin-left: 10px;
 }
-footer .row>div{
+
+footer .row>div {
     overflow: hidden;
 }
