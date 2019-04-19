@@ -115,18 +115,14 @@
                 <div class="col-md-3 hidden-xs">
                     <div class="conter-left ">
                         <div class="conter-left-top">制作/发动机</div>
+                        <a href="ConnectingRods.html" class="conter-left-top-a">------------ 连接杆 ------------</a>
                         <ul class="catrgory">
-                            <li><a href="#">▶ Acura & Honda Rods</a></li>
-                            <li><a href="#">▶ Audi & VW Rods</a></li>
-                            <li><a href="#">▶ Buick Rods</a></li>
-                            <li><a href="#">▶ BMW Rods</a></li>
-                            <li><a href="#">▶ Fiat Rods</a></li>
-                            <li><a href="#">▶ Harley Davidson Rods</a></li>
-                            <li><a href="#">▶ Isuzu Rods</a></li>
-                            <li><a href="#">▶ Mazda Rods</a></li>
-                            <li><a href="#">▶ Mitsubishi Rods</a></li>
-                            <li><a href="#">▶ Opel/Vauxhall Rods</a></li>
+
                         </ul>
+                        <a href="#" class="conter-left-top-a">------------ 曲轴 ------------</a>
+                        <a href="#" class="conter-left-top-a">------------ 活塞 ----------</a>
+                        <a href="#" class="conter-left-top-a">------------ 连杆螺栓 ------------</a>
+                        <a href="#" class="conter-left-top-a">------------ 画廊 ------------</a>
                     </div>
                     <div class="conter-left">
                         <div class="conter-left-top">最新产品</div>
@@ -431,14 +427,14 @@
 </script>
 <script>
     window.onload = function () {
-        if (document.body.clientWidth < 450) {
-            console.log(document.body.clientWidth);
-            $('footer').css("padding", 0)
-            $('.media-object').width(150 + 'px')
-            $("#basement").width(document.body.clientWidth + "px");
-        } else {
-            $("#basement").width(6.3 + "rem");
-        }
+        // if (document.body.clientWidth < 450) {
+        //     console.log(document.body.clientWidth);
+        //     $('footer').css("padding", 0)
+        //     $('.media-object').width(150 + 'px')
+        //     $("#basement").width(document.body.clientWidth + "px");
+        // } else {
+        //     $("#basement").width(6.3 + "rem");
+        // }
         $.get({
             url: 'http://localhost:80/frontApi/nav.php',
             dataType: 'json',

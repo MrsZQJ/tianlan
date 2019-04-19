@@ -1,0 +1,31 @@
+.news-detail-title{
+    height: .195313rem;
+    line-height: .195313rem;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    color: #af0d0d;
+    font-weight: 700;
+}
+.news-detail-auth{
+    padding: .035rem .3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.news-detail-auth span{
+    font-size: .054688rem;
+}
+.news-detail-content{
+    padding: .039063rem;
+}
+@media screen and (max-width: 1000px) {
+    footer {
+        padding: 0;
+    }
+    #basement {
+        width: 100%;
+    }
+    .news-detail-title{
+        height: .390625rem;
+        line-height: .390625rem;
+    }
+}

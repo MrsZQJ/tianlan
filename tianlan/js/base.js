@@ -1,1 +1,2 @@
-export const baseUrl='http://127.0.0.1:8899/'
+const baseUrl = 'http://127.0.0.1:8899/'
+export default baseUrl

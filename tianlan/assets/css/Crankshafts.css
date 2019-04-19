@@ -77,9 +77,9 @@
     font-size: 10px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1299px){
     footer{
-        padding: 0;
+        padding: .1rem;
     }
     
     .content-cent{

@@ -115,18 +115,14 @@
                 <div class="col-md-3 hidden-xs">
                     <div class="conter-left ">
                         <div class="conter-left-top">制作/发动机</div>
+                        <a href="ConnectingRods.html" class="conter-left-top-a">------------ 连接杆 ------------</a>
                         <ul class="catrgory">
-                            <li><a href="#">▶ Acura & Honda Rods</a></li>
-                            <li><a href="#">▶ Audi & VW Rods</a></li>
-                            <li><a href="#">▶ Buick Rods</a></li>
-                            <li><a href="#">▶ BMW Rods</a></li>
-                            <li><a href="#">▶ Fiat Rods</a></li>
-                            <li><a href="#">▶ Harley Davidson Rods</a></li>
-                            <li><a href="#">▶ Isuzu Rods</a></li>
-                            <li><a href="#">▶ Mazda Rods</a></li>
-                            <li><a href="#">▶ Mitsubishi Rods</a></li>
-                            <li><a href="#">▶ Opel/Vauxhall Rods</a></li>
+
                         </ul>
+                        <a href="#" class="conter-left-top-a">------------ 曲轴 ------------</a>
+                        <a href="#" class="conter-left-top-a">------------ 活塞 ----------</a>
+                        <a href="#" class="conter-left-top-a">------------ 连杆螺栓 ------------</a>
+                        <a href="#" class="conter-left-top-a">------------ 画廊 ------------</a>
                     </div>
                     <div class="conter-left">
                         <div class="conter-left-top">最新产品</div>
@@ -143,28 +139,6 @@
                                     <img src="./assets/image/img/DSCN4745.JPG" alt="">
                                     <p>用于Vauxhall Opel C20XE 2.0ltr 16v发动机，86.5mm活塞的锻造活塞</p>
                                 </a></li>
-                        </ul>
-                    </div>
-                    <div class="conter-left">
-                        <div class="conter-left-top">新闻</div>
-                        <ul class="catrgory3">
-                            <li><a href="#">飓风定制活塞信息</a>
-                                <p>每个人都希望发动机具有最佳性能和耐用性。定制活塞通常更具成本效益且更可靠。丘斯托...</p>
-                            </li>
-                            <li><a href="#">4340钢，钛和铝连杆</a>
-                                <p>重量。强度。平衡。在杆选择方面，哪个更重要？通过技术和自动化的进步，现在可以在一个工厂（飓风速度和性能），4340钢，钛和铝中提供三种连杆。</p>
-                            </li>
-                            <li><a href="#">飓风定制曲轴信息</a>
-                                <p>众所周知，锻造或小方坯曲轴都非常适合在竞争市场中广受欢迎的高性能应用。锻造4340钢曲柄...</p>
-                            </li>
-                            <li><a href="#">飓风高性能连杆 - 加工棒的加工</a>
-                                <p>主杆包括雪佛兰，福特，哈雷戴维森，大众和奥迪，欧宝，本田，日产，斯巴鲁，三菱，丰田，五十铃，铃木，马自达，别克，宝马，克莱斯勒和道奇，菲亚特
-                                    在以下过程中的图片均为在飓风速度和性能的生产中进行的13项主要行动：</p>
-                            </li>
-                            <li><a href="#">铸造，锻造和方坯活塞之间的区别</a>
-                                <p>这里是活塞差异的简短介绍，里面的活塞表面。铸造活塞：内部部分完全没有加工; 锻造半精加工活塞：内侧为锻造表面，喷砂处理; 钢坯精加​​工活塞：内部零件经过全面精加工。
-                                </p>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -279,7 +253,7 @@
                                 <div class="media-left media-middle">
                                     <img src="./assets/image/img/010aj.jpg" class="media-object"">
                                 </div>
-                                <div class=" media-body">
+                                <div class="media-body">
                                     <h4 class="media-heading"><a href="#">比赛连杆（6） - TOYOTA 1GR-FE</a></h4>
                                     <p>品牌：Hurricane * </p>
                                     <p>发动机：丰田1GR-FE
@@ -426,14 +400,14 @@
 </script>
 <script>
     window.onload = function () {
-        if (document.body.clientWidth < 450) {
-            console.log(document.body.clientWidth);
-            $('footer').css("padding", 0)
-            $('.media-object').width(150 + 'px')
-            $("#basement").width(document.body.clientWidth + "px");
-        } else {
-            $("#basement").width(6.3 + "rem");
-        }
+        // if (document.body.clientWidth < 450) {
+        //     console.log(document.body.clientWidth);
+        //     $('footer').css("padding", 0)
+        //     $('.media-object').width(150 + 'px')
+        //     $("#basement").width(document.body.clientWidth + "px");
+        // } else {
+        //     $("#basement").width(6.3 + "rem");
+        // }
         $.get({
             url: 'http://localhost:80/frontApi/nav.php',
             dataType: 'json',

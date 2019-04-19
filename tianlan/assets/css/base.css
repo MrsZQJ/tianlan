@@ -12,12 +12,11 @@ body {
 }
 
 #basement {
-    width: 7.2rem;
+    width: 1300px;
     margin: 0 auto;
 }
 header {
     height: .8rem;
-    
     overflow: hidden;
 }
 
@@ -37,7 +36,6 @@ header img {
 }
 
 .navbar-nav {
-    width: 5.7rem;
     background-color: #fdfcff;
 }
 #navbar-example {
@@ -59,7 +57,7 @@ header img {
 
 #carousel-example-generic img {
     /* width: 11.55rem; */
-    height: 2rem;
+    height: 1rem;
 }
 
 .conter {
@@ -132,7 +130,7 @@ header img {
 /* footer */
 footer{
     background-color: #1c1c1c;
-    padding: 30px;
+    padding: .3rem;
 }
 footer .row{
     /* height: 270px; */

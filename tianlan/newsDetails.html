@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/news.css">
+    <link rel="stylesheet" href="./assets/css/news-detail.css">
     <link rel="stylesheet" href="./assets/vendors/font-awesome-4.7.0/css/font-awesome.css" />
     <script src="./assets/vendors/rem.js"></script>
 </head>
@@ -107,12 +108,13 @@
         <!-- 面包屑 -->
         <ul class="breadcrumb">
             <li><a href="./index.html">首页-----产品展示</a></li>
-            <li class="active">新闻</li>
+            <li class="active"><a href="news.html">新闻</a></li>
+            <li class="active">新闻详情</li>
         </ul>
         <!-- 分类信息页面 -->
         <div class="conter">
             <div class="row">
-                <div class="col-md-3 hidden-xs">
+                <div class="col-md-3 hidden-xs hidden-sm  you2">
                     <div class="conter-left ">
                         <div class="conter-left-top">新闻</div>
                         <ul class="catrgory">
@@ -165,17 +167,18 @@
                     <div class="conter-right ">
                         <div class="conter-right-top2">&nbsp;&nbsp;&nbsp;新闻</div>
                         <div class="conter-right-con">
-                            <!-- 分类 -->
-                            <ul class="news">
-                                <li><a href="#"></a><span></span></li>
-                            </ul>
-                            <ul class="pagination pagination-sm pull-right">
-                                <li><a href="#">上一页</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">下一页</a></li>
-                              </ul>
+                            <!-- 新闻详情 -->
+                            <div class="news-detail">
+                                <div class="news-detail-title">飓风定制活塞信息</div>
+                                <div class="news-detail-auth">
+                                    <span>作者:<i></i></span>
+                                    <span>资料来源：<i></i></span>
+                                    <span>发布于：<i></i></span>
+                                </div>
+                                <div class="news-detail-content">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,37 +190,33 @@
     </div>
     <!-- footer -->
     <footer>
-        <div class="row">
-            <div class="col-md-5 col-xs-4 col-xs-offset-1">
-                <h3>客户服务</h3>
+        <div class="row hidden-xs hidden-sm hidden-md">
+            <div class="col-md-4">
+                <h4>关于我们</h4>
                 <ul>
-                    <li><i class="fa fa-angle-right"></i><a href="#">FAQs</a></li>
-                    <li>
-                        <i class="fa fa-angle-right"></i><a href="#">Certifications</a>
-                    </li>
-                    <li><i class="fa fa-angle-right"></i><a href="#">Download</a></li>
-                    <li>
-                        <i class="fa fa-angle-right"></i><a href="#">Quality Feedback</a>
-                    </li>
+                    <li><a href="#">公司简介</a></li>
+                    <li><a href="#">质量反馈</a></li>
+                    <li><a href="#">企业文化</a></li>
                 </ul>
             </div>
-            <div class="col-md-6 col-xs-6">
-                <h3>联系我们</h3>
+            <div class="col-md-4">
+                <h4>联系我们</h4>
                 <ul>
-                    <li>
-                        <i class="fa fa-angle-right"></i><a href="#">电子邮件：marketing@hurricane-rod.com.cn</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-right"></i><a href="#">传真：00862884733371</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-right"></i><a href="#">电话：+86 2884733371</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-right"></i><a href="#">地址：四川省成都市双井路中环610081</a>
-                    </li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">合作洽谈</a></li>
                 </ul>
             </div>
+            <div class="col-md-4">
+                <h4>公司地址</h4>
+                <ul>
+                    <li><a href="#">地址：广东省深圳市南山区沙河西路2009号尚美科技大厦1601-1602</a></li>
+                    <li><a href="#">电话：0755-23216034</a></li>
+                    <li><a href="#">邮箱：contact@86cp.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="visible-xs visible-sm visible-md" style="text-align: center;color: gray">
+            <p>Copyright © 深圳市天蓝网络科技有限公司 All Rights Reserved. 版权所有 粤ICP备18142694号-1</p>
         </div>
     </footer>
     <script src="./assets/vendors/jquery/jquery.js"></script>
@@ -236,25 +235,27 @@
 </script>
 <script type="text/html" id="news">
     {{each list value}}
-    <li><a href="newsDetails.html?id={{value.Id}}"><i
-                class="fa fa-caret-right"></i>{{value.title}}</a><span>{{value.create_time}}</span></li>
+    <div class="news-detail-title">{{value.title}}</div>
+    <div class="news-detail-auth">
+        <span class="">作者:<i>{{value.author}}</i></span>
+        <span class="visible-lg">资料来源：<i>http://baidu.com</i></span>
+        <span class="">发布于：<i>{{value.create_time}}</i></span>
+    </div>
+    <div class="news-detail-content">
+
+    </div>
     {{/each}}
 </script>
 <script>
     window.onload = function () {
-        if (document.body.clientWidth < 450) {
-            console.log(document.body.clientWidth);
-            $('footer').css("padding", 0)
-            $('.media-object').width(150 + 'px')
-            $("#basement").width(document.body.clientWidth + "px");
-        } else {
-            $("#basement").width(6.3 + "rem");
-        }
-
-
-
+        // if (document.body.clientWidth < 450) {
+        //     console.log(document.body.clientWidth);
+        //     $('footer').css("padding", 0)
+        //     $('.media-object').width(150 + 'px')
+        //     $("#basement").width(document.body.clientWidth + "px");
+        // 
         $.get({
-            url: 'http://localhost:800/frontApi/nav.php',
+            url: 'http://localhost:80/frontApi/nav.php',
             dataType: 'json',
             success: function (obj) {
                 // console.log(obj);
@@ -265,53 +266,22 @@
                 $('.navbar-nav').html(html);
             }
         })
-        getNews(1)
-
-        function getNews(pageIndex) {
-            $.get({
-                url: 'http://localhost:800/frontApi/news.php',
-                data: {
-                    pageIndex: pageIndex,
-                    pageSize: 15
-                },
-                dataType: 'json',
-                success: function (obj) {
-                    console.log(obj);
-                    const html = template('news', {
-                        list: obj.data
-                    })
-                    // console.log(html);
-                    $('.news').html(html);
-                    //先摧毁分页
-                    $('.pagination').twbsPagination('destroy');
-
-                    // 这个插件出于节省效率的目的，只会帮你初始化一次！只有第一次来执行这段代码才有用
-                    // 后面执行都不会再帮你重新设置那些选项
-                    // 解决办法：我让它每次来都是第一次，那就是先删掉它，再创建它
-                    $('.pagination').twbsPagination({
-                        // 设置总页数
-                        totalPages: obj.totalPages,
-                        // 设置可见页数
-                        visiblePages: 5,
-                        // 设置默认让哪一页为起始页（让哪一页为高亮页，默认值为1）
-                        // 所以我们要让startPage改为当前页
-                        startPage: pageIndex,
-                        // 禁用默认的插件初始化完成自动调用点击事件
-                        initiateStartPageClick: false,
-                        first: "首页",
-                        prev: "上一页",
-                        next: "下一页",
-                        last: "尾页",
-                        // 参数1：事件对象
-                        // 参数2：被点击的页码数
-                        onPageClick: function (event, page) {
-                            // alert(page);
-                            getNews(page)
-                        }
-                    });
-                }
-            })
-        }
+        var Id = location.href.split('=')[1]
+        $.get({
+            url: 'http://localhost:80/frontApi/news-detail.php',
+            data: {
+                pageId: Id,
+            },
+            dataType: 'json',
+            success: function (obj) {
+                console.log(obj);
+                const html = template('news', {
+                    list: obj
+                })
+                $('.news-detail').html(html)
+                $('.news-detail-content').html(obj[0].content)
+            }
+        })
     };
 </script>
 
