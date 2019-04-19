@@ -1,35 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
-<!-- 
-
-  一、准备工作
-
-      1.把写文章内容的地方变成富文本
-          1.1 先把默认的textarea删掉或者注释掉
-          1.2 在原来textarea的地方加一个div，id叫content
-          1.3 导入富文本插件，实例化content这个div，再调用create生成
-
-      2.页面打开就发一个请求，请求所有分类，再把所有分类作为option放到下拉框（记得给每个option加value,value存分类的id），删掉默认就存在的两个option
-
-      3.给file加change事件，里面做图片预览
-
-      4.导入moment.js，把当前时间作为created的默认时间
-
-      5.给保存按钮加一个id，并添加点击事件，在点击事件里阻止事件默认行为
-
-
-
-二、完成新增
-      1.写一个新增文章的接口，接收7个参数：title,content,slug,feature,category,created,status
-      2.在接口里获取到所有数据：注意feature是图片，要把图片移动一下
-      3.打开session，获取到当前登录用户的id
-      4.使用insert语句(记得把图片路径换成UTF-8的)
-      5.回到本文件，在保存按钮的点击事件里，创建FormData对象并传入表单对象
-          5.1 然后调用FormData对象的append方法，追加富文本里的内容
-          5.2 通过jquery发ajax请求，传入FormData，如果成功，跳转到文章列表页
- -->
-
 <head>
   <!-- 页面一开始就要判断是否有登录（就是看服务器有没有session） -->
   <script>
@@ -198,39 +168,43 @@
                   <input id="brand" class="form-control input-sm" name="brand" type="text" placeholder="品牌名称">
                 </div>
                 <div class="form-group">
-                  <label for="engine">发动机</label>
+                  <label for="engine">部件号</label>
                   <input id="engine" class="form-control input-sm" name="engine" type="text" placeholder="发动机名称">
                 </div>
                 <div class="form-group">
-                  <label for="part">零件类型</label>
+                  <label for="part">发动机型号</label>
                   <input id="part" class="form-control input-sm" name="part" type="text" placeholder="零件类型名称">
                 </div>
                 <div class="form-group">
-                  <label for="centerLength">中心长度</label>
+                  <label for="centerLength">曲轴材质</label>
                   <input id="centerLength" class="form-control input-sm" name="centerLength" type="text"
                     placeholder="中心长度名称">
                 </div>
                 <div class="form-group">
-                  <label for="aperture">孔径</label>
+                  <label for="aperture">发动机行程</label>
                   <input id="aperture" class="form-control input-sm" name="aperture" type="text" placeholder="孔径名称">
                 </div>
                 <div class="form-group">
-                  <label for="bigBodywide">大端宽度</label>
+                  <label for="bigBodywide">直径</label>
                   <input id="bigBodywide" class="form-control input-sm" name="bigBodywide" type="text"
                     placeholder="大端宽度名称">
                 </div>
                 <div class="form-group">
-                  <label for="smallEnddiameter">小端孔直径</label>
+                  <label for="smallEnddiameter">杆轴 直径</label>
                   <input id="smallEnddiameter" class="form-control input-sm" name="smallEnddiameter" type="text"
                     placeholder="小端孔直径名称">
                 </div>
                 <div class="form-group">
-                  <label for="smallEndwide">小端宽度</label>
+                  <label for="smallEndwide">最小杆长</label>
                   <input id="smallEndwide" class="form-control input-sm" name="smallEndwide" type="text"
                     placeholder="小端宽度名称">
                 </div>
                 <div class="form-group">
-                  <label for="light">光束类型</label>
+                  <label for="light">鲍勃重量</label>
+                  <input id="light" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
+                </div>
+                <div class="form-group">
+                  <label for="light">体重</label>
                   <input id="light" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
                 </div>
               </div>

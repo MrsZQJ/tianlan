@@ -367,21 +367,12 @@
 </script>
 <script>
   window.onload = function () {
-    // if (document.body.clientWidth < 450) {
-    //   console.log(document.body.screen);
-    //   $('footer').css("padding", 0)
-    //   $('.cent').width(3.5 + 'rem')
-    //   $('.cent').height(3.5 + 'rem')
-    //   $('.swiper-container').height(250 + 'px')
-    //   $("#basement").width(document.body.clientWidth + "px");
-    // } else {
-    //   $("#basement").width(6.3 + "rem");
-    // }
+
     $.get({
       url: 'http://localhost:80/frontApi/silder.php',
       dataType: 'json',
       success: function (obj) {
-        console.log(obj);
+        // console.log(obj);
         const html = template('silder', {
           list: obj
         })
@@ -393,7 +384,7 @@
       url: 'http://localhost:80/frontApi/nav.php',
       dataType: 'json',
       success: function (obj) {
-        // console.log(obj);
+        console.log(obj);
         const html = template('nav', {
           list: obj
         })
@@ -431,7 +422,7 @@
       url: 'http://localhost:80/frontApi/silder.php',
       dataType: 'json',
       success: function (obj) {
-        console.log(obj);
+        // console.log(obj);
         const html = template('silder2', {
           list: obj
         })
