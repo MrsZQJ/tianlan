@@ -32,22 +32,25 @@
     background-color: #ffffff;
     padding-bottom: .05rem;
     position: relative;
-    margin-top: .3rem !important;
-    
 }
-.media-left{
+.media-middle{
     border: 1px #dcdcdc dashed;
+    width: 37%;
 }
 .media-body{
     padding: .1rem;
 }
+.media-heading{
+    font-size: .185185rem;
+}
 .media-body p{
-    font-size: 12px;
-    line-height: 14px;
+    font-size: .111111rem;
+    line-height: .12963rem;
 }
 .media-object{
-    width: 190px;
+    width: 100%;
 }
+
 .catrgory2{
     display: flex;
     flex-direction: column;
@@ -76,18 +79,4 @@
 }
 .catrgory3 li p{
     font-size: 10px;
-}
-
-@media screen and (max-width: 500px){
-    footer{
-        padding: 0;
-    }
-    
-    .content-cent{
-        justify-content: space-between;
-        padding: .2rem;
-    }
-    #basement{
-        width: 100%;
-    }
 }
