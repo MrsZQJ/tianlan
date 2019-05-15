@@ -208,6 +208,7 @@
 
     //转成临时url
     var url = URL.createObjectURL(this.files[0]);
+    console.log(url);
     $('img.help-block').attr('src', url).show();
   });
 

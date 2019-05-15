@@ -18,7 +18,8 @@
     background: url('../image/cpflr_h3.png');
     color: aliceblue;
     line-height: 30px;
-    
+    font-size: .12963rem;
+    padding-left: 25px;
 }
 .conter-right-con{
     background-color: #cccccc;

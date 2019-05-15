@@ -16,7 +16,7 @@
 <body>
     <div id="basement">
         <header>
-            <img src="./assets/image/img/21.jpg" alt="" />
+
         </header>
         <!-- 下拉菜单 -->
         <nav id="navbar-example" class="navbar navbar-default navbar-static">
@@ -29,8 +29,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="./index.html"><i class="fa fa-home"
-                            style="font-size:30rpx;color: aqua"></i></a>
+                    <a class="navbar-brand" href="./index.html"><i class="fa fa-home"></i></a>
                     <div class="sousuo2 visible-xs">
                         <div class="input-group input-group-md">
                             <input type="text" class="form-control sousuo-ipt" placeholder="Search" />
@@ -41,54 +40,13 @@
                     </div>
                 </div>
                 <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav dropdown-fat">
                         <!-- <li class="dropdown">
-                            <a href="./ConnectingRods.html">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;连杆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="./Crankshafts.html">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曲轴&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="./Pistons.html">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活塞&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="./customization.html">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定制&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="drop2">
-                                <li><a href="#">下载</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">质量反馈</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常见问题解答&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </a>
-                        </li> -->
+                                    <a href="./ConnectingRods.html">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;连杆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                                    </a>
+                                </li> -->
                     </ul>
                 </div>
                 <!-- /.nav-collapse -->
@@ -112,7 +70,7 @@
         <!-- 分类信息页面 -->
         <div class="conter">
             <div class="row">
-                <div class="col-md-3 hidden-xs">
+                <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
                     <div class="conter-left ">
                         <div class="conter-left-top">新闻</div>
                         <ul class="catrgory">
@@ -187,7 +145,7 @@
     </div>
     <!-- footer -->
     <footer>
-        <div class="row hidden-xs">
+        <div class="row hidden-xs hidden-sm hidden-md">
             <div class="col-md-4">
                 <h4>关于我们</h4>
                 <ul>
@@ -212,7 +170,7 @@
                 </ul>
             </div>
         </div>
-        <div class="visible-xs" style="text-align: center;color: gray">
+        <div class="visible-xs visible-sm visible-md footer-small">
             <p>Copyright © 深圳市天蓝网络科技有限公司 All Rights Reserved. 版权所有 粤ICP备18142694号-1</p>
         </div>
     </footer>
@@ -225,7 +183,7 @@
     {{each list value index}}
     <li class="{{if value.name=='新闻'}} active  {{else}} dropdown {{/if}} ">
         <a href="{{value.link}}">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{value.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {{value.name}}
         </a>
     </li>
     {{/each}}
@@ -238,14 +196,6 @@
 </script>
 <script>
     window.onload = function () {
-        // if (document.body.clientWidth < 450) {
-        //     console.log(document.body.clientWidth);
-        //     $('footer').css("padding", 0)
-        //     $('.media-object').width(150 + 'px')
-        // } else {
-        // }
-
-
 
         $.get({
             url: 'http://localhost:80/frontApi/nav.php',
@@ -270,7 +220,12 @@
                 },
                 dataType: 'json',
                 success: function (obj) {
-                    console.log(obj);
+                    for (var i = 0; i < obj.data.length; i++) {
+                        var tim = obj.data[i].create_time
+                        obj.data[i].create_time = tim.split('T')[0]
+                    }
+                    // console.log(tim.split('T')[0]);
+                    // console.log(obj);
                     const html = template('news', {
                         list: obj.data
                     })

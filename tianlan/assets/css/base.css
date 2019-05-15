@@ -21,7 +21,8 @@ body {
 header {
     height: 1.574074rem;
     background-image: url("../image/img/21.jpg");
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat; 
+    background-size: 100%  
 }
 
 /* header img {

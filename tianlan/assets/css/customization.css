@@ -1,68 +1,87 @@
-.choose{
+.choose {
     background-color: #000000;
 }
-#drop3{
+
+#drop3 {
     color: white;
 }
-.breadcrumb{
-    margin: 0; 
+
+.breadcrumb {
+    margin: 0;
 }
-.conter-left{
+
+.conter-left {
     margin-top: .15rem;
 }
-.conter-right{
+
+.conter-right {
     padding: 0;
 }
-.conter-right-top{
 
+.conter-right-top2 {
+    height: 30px;
+    background: url('../image/cpflr_h3.png');
+    color: aliceblue;
+    line-height: 30px;
+    font-size: .12963rem;
+    padding-left: 25px;
 }
-.conter-right-con{
+
+.conter-right-con {
     background-color: #ffffff;
     padding: .1rem;
+    height: 2000px;
 }
-.catrgory2{
+
+.conter-right-con-img1 {
+    width: 100%;
+}
+.conter-right-con-img2 {
+    width: 100%;
+}
+.catrgory2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
 }
-.catrgory2 li img{
+
+.catrgory2 li img {
     width: 190px;
     height: 190px;
 }
-.catrgory2 li{
+
+.catrgory2 li {
     width: 192px;
     height: 265px;
 }
-.catrgory3{
+
+.catrgory3 {
     text-align: left;
     padding: 20px;
 }
-.catrgory3 li{
+
+.catrgory3 li {
     list-style: square;
 }
-.catrgory3 li a{
+
+.catrgory3 li a {
     color: #003366;
     font-size: 14px;
 }
-.catrgory3 li p{
+
+.catrgory3 li p {
     font-size: 10px;
 }
-.sub{
+
+.sub {
     margin-top: .8rem;
 }
 
-@media screen and (max-width: 500px){
-    footer{
-        padding: 0;
-    }
-    
-    .content-cent{
-        justify-content: space-between;
-        padding: .2rem;
-    }
-    #basement{
-        width: 100%;
+
+@media screen and (max-width: 1300px) {
+    .conter-right-con-img2 {
+        width: 60%;
     }
 }

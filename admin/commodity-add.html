@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <!-- 页面一开始就要判断是否有登录（就是看服务器有没有session） -->
   <script>
@@ -70,49 +71,61 @@
             <!-- 1 -->
             <form class="row">
               <div class="col-md-9">
-                <div class="form-group">
-                  <label for="title">标题</label>
-                  <input id="title" class="form-control input-sm" name="title" type="text" placeholder="文章标题">
+                <div class="aaa">
+                  <div class="form-group">
+                    <label for="title">标题</label>
+                    <input id="title" class="form-control input-sm" name="title" type="text" placeholder="文章标题">
+                  </div>
+                  <div class="form-group">
+                    <label for="brand">品牌</label>
+                    <input id="brand" class="form-control input-sm" name="brand" type="text" placeholder="品牌名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="engine">发动机</label>
+                    <input id="engine" class="form-control input-sm" name="engine" type="text" placeholder="发动机名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="part">零件类型</label>
+                    <input id="part" class="form-control input-sm" name="part" type="text" placeholder="零件类型名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="centerLength">中心长度</label>
+                    <input id="centerLength" class="form-control input-sm" name="centerLength" type="text"
+                      placeholder="中心长度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="aperture">孔径</label>
+                    <input id="aperture" class="form-control input-sm" name="aperture" type="text" placeholder="孔径名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="bigBodywide">大端宽度</label>
+                    <input id="bigBodywide" class="form-control input-sm" name="bigBodywide" type="text"
+                      placeholder="大端宽度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="smallEnddiameter">小端孔直径</label>
+                    <input id="smallEnddiameter" class="form-control input-sm" name="smallEnddiameter" type="text"
+                      placeholder="小端孔直径名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="smallEndwide">小端宽度</label>
+                    <input id="smallEndwide" class="form-control input-sm" name="smallEndwide" type="text"
+                      placeholder="小端宽度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="light">光束类型</label>
+                    <input id="light" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="brand">品牌</label>
-                  <input id="brand" class="form-control input-sm" name="brand" type="text" placeholder="品牌名称">
-                </div>
-                <div class="form-group">
-                  <label for="engine">发动机</label>
-                  <input id="engine" class="form-control input-sm" name="engine" type="text" placeholder="发动机名称">
-                </div>
-                <div class="form-group">
-                  <label for="part">零件类型</label>
-                  <input id="part" class="form-control input-sm" name="part" type="text" placeholder="零件类型名称">
-                </div>
-                <div class="form-group">
-                  <label for="centerLength">中心长度</label>
-                  <input id="centerLength" class="form-control input-sm" name="centerLength" type="text"
-                    placeholder="中心长度名称">
-                </div>
-                <div class="form-group">
-                  <label for="aperture">孔径</label>
-                  <input id="aperture" class="form-control input-sm" name="aperture" type="text" placeholder="孔径名称">
-                </div>
-                <div class="form-group">
-                  <label for="bigBodywide">大端宽度</label>
-                  <input id="bigBodywide" class="form-control input-sm" name="bigBodywide" type="text"
-                    placeholder="大端宽度名称">
-                </div>
-                <div class="form-group">
-                  <label for="smallEnddiameter">小端孔直径</label>
-                  <input id="smallEnddiameter" class="form-control input-sm" name="smallEnddiameter" type="text"
-                    placeholder="小端孔直径名称">
-                </div>
-                <div class="form-group">
-                  <label for="smallEndwide">小端宽度</label>
-                  <input id="smallEndwide" class="form-control input-sm" name="smallEndwide" type="text"
-                    placeholder="小端宽度名称">
-                </div>
-                <div class="form-group">
-                  <label for="light">光束类型</label>
-                  <input id="light" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="content">文章内容</label>
+                    <div class="summernote summernote1"></div>
+                    <!-- 1111111111111 -->
+                  </div>
+                  <div class="form-group col-md-6">
+                    <button id="save1" class="btn btn-primary" type="submit">保存</button>
+                  </div>
                 </div>
               </div>
               <div class="col-md-3">
@@ -122,36 +135,46 @@
                   <p class="help-block">https://zce.me/post/<strong>slug</strong></p>
                 </div>
                 <div class="form-group">
-                  <label for="feature">特色图像</label>
+                  <label for="feature">商品列表图像1</label>
                   <!-- show when image chose -->
-                  <img class="help-block thumbnail" style="display: none">
-                  <input id="feature" class="form-control" name="feature" type="file">
+                  <img class="help-block thumbnail feature1" style="display: none">
+                  <input class="form-control feature1" name="feature1" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像2</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature2" style="display: none">
+                  <input id="" class="form-control feature2" name="feature2" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像3</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature3" style="display: none">
+                  <input id="" class="form-control feature3" name="feature3" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像4</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature4" style="display: none">
+                  <input id="" class="form-control feature4" name="feature4" type="file">
                 </div>
                 <div class="form-group">
                   <label for="category">所属分类</label>
-                  <select id="category" class="form-control" name="category">
+                  <select id="category1" class="form-control category" name="category">
 
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="created">发布时间</label>
-                  <input id="created" class="form-control" name="created" type="datetime-local">
+                  <input id="created1" class="form-control created" name="created" type="datetime-local">
                 </div>
                 <div class="form-group">
                   <label for="status">状态</label>
-                  <select id="status" class="form-control" name="status">
-                    <option value="1">草稿</option>
-                    <option value="2">已发布</option>
+                  <select id="status1" class="form-control" name="status">
+                    <option value="drafted">草稿</option>
+                    <option value="published">已发布</option>
                   </select>
                 </div>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="content">文章内容</label>
-                <div class="summernote"></div>
-                <!-- 1111111111111 -->
-              </div>
-              <div class="form-group col-md-6">
-                <button id="save1" class="btn btn-primary" type="submit">保存</button>
               </div>
             </form>
           </div>
@@ -215,36 +238,54 @@
                   <p class="help-block">https://zce.me/post/<strong>slug</strong></p>
                 </div>
                 <div class="form-group">
-                  <label for="feature">特色图像</label>
+                  <label for="feature">商品列表图像1</label>
                   <!-- show when image chose -->
-                  <img class="help-block thumbnail" style="display: none">
-                  <input id="feature" class="form-control" name="feature" type="file">
+                  <img class="help-block thumbnail feature5" style="display: none">
+                  <input id="" class="form-control feature5" name="feature5" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像2</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature6" style="display: none">
+                  <input id="" class="form-control feature6" name="feature6" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像3</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature7" style="display: none">
+                  <input id="" class="form-control feature7" name="feature7" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像4</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature8" style="display: none">
+                  <input id="" class="form-control feature8" name="feature8" type="file">
                 </div>
                 <div class="form-group">
                   <label for="category">所属分类</label>
-                  <select id="category" class="form-control" name="category">
+                  <select id="category2" class="category form-control" name="category">
 
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="created">发布时间</label>
-                  <input id="created" class="form-control" name="created" type="datetime-local">
+                  <input id="created2" class="form-control created" name="created" type="datetime-local">
                 </div>
                 <div class="form-group">
                   <label for="status">状态</label>
-                  <select id="status" class="form-control" name="status">
+                  <select id="status2" class="form-control" name="status">
                     <option value="1">草稿</option>
                     <option value="2">已发布</option>
                   </select>
                 </div>
               </div>
-              <div class="form-group col-md-12">
+              <div class="form-group col-md-9">
                 <label for="content">文章内容</label>
-                <div class="summernote"></div>
+                <div class="summernote summernote2"></div>
                 <!-- 1111111111111 -->
               </div>
               <div class="form-group col-md-6">
-                <button id="save1" class="btn btn-primary" type="submit">保存</button>
+                <button id="save2" class="btn btn-primary" type="submit">保存</button>
               </div>
             </form>
           </div>
@@ -304,36 +345,54 @@
                   <p class="help-block">https://zce.me/post/<strong>slug</strong></p>
                 </div>
                 <div class="form-group">
-                  <label for="feature">特色图像</label>
+                  <label for="feature">商品列表图像1</label>
                   <!-- show when image chose -->
-                  <img class="help-block thumbnail" style="display: none">
-                  <input id="feature" class="form-control" name="feature" type="file">
+                  <img class="help-block thumbnail feature9" style="display: none">
+                  <input id="" class="form-control feature9" name="feature9" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像2</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature10" style="display: none">
+                  <input id="" class="form-control feature10" name="feature10" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像3</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature11" style="display: none">
+                  <input id="" class="form-control feature11" name="feature11" type="file">
+                </div>
+                <div class="form-group">
+                  <label for="feature">商品列表图像4</label>
+                  <!-- show when image chose -->
+                  <img class="help-block thumbnail feature12" style="display: none">
+                  <input id="" class="form-control feature12" name="feature12" type="file">
                 </div>
                 <div class="form-group">
                   <label for="category">所属分类</label>
-                  <select id="category" class="form-control" name="category">
+                  <select id="category3" class="form-control category" name="category">
 
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="created">发布时间</label>
-                  <input id="created" class="form-control" name="created" type="datetime-local">
+                  <input id="created3" class="form-control created" name="created" type="datetime-local">
                 </div>
                 <div class="form-group">
                   <label for="status">状态</label>
-                  <select id="status" class="form-control" name="status">
-                    <option value="1">草稿</option>
-                    <option value="2">已发布</option>
+                  <select id="status3" class="form-control" name="status">
+                    <option value="drafted">草稿</option>
+                    <option value="published">已发布</option>
                   </select>
                 </div>
               </div>
-              <div class="form-group col-md-12">
+              <div class="form-group col-md-9">
                 <label for="content">文章内容</label>
-                <div class="summernote"></div>
+                <div class="summernote summernote3"></div>
                 <!-- 1111111111111 -->
               </div>
               <div class="form-group col-md-6">
-                <button id="save1" class="btn btn-primary" type="submit">保存</button>
+                <button id="save3" class="btn btn-primary" type="submit">保存</button>
               </div>
             </form>
           </div>
@@ -398,97 +457,157 @@
   <script>
     NProgress.done()
   </script>
+  <script src="../assets/vendors/wangEditor.min.js"></script>
+  <script>
+    $(function () {
+      changeBianji()
+      function changeBianji() {
+        // var normalHeight = 400
+        // const formHeight = $($('form')[0]).height()
+        // const aaaHeight = $('.aaa').height()
+        // // console.log(formHeight);
+        // // console.log(aaaHeight);
+        // if (formHeight > aaaHeight) {
+        //   if(formHeight-aaaHeight>400){
+        //     normalHeight=formHeight-aaaHeight
+        //     $('#summernote').summernote('destroy')
+        //   }
+        // }
+        // console.log(normalHeight);
+        //创建编辑器对象
+        $('.summernote').summernote({
+          height: 500, // set editor height
+          minHeight: null, // set minimum height of editor
+          maxHeight: null, // set maximum height of editor
+          focus: true // set focus to editable area after initializing summernote
+        });
+      }
+
+      //给上传图片加预览功能
+      for (var i = 1; i <= 12; i++) {
+        $(`input.feature${i}`).change(function () {
+          // console.log(this);
+          var url = URL.createObjectURL(this.files[0]);
+          // console.log($(this).attr('class').split(" ")[1].split('feature')[1]);
+          const c = $(this).attr('class').split(" ")[1].split('feature')[1]
+          //加到img里去显示
+          $(`img.feature${c}`).attr('src', url).show();
+        });
+      }
+      //让时间元素显示为当前时间
+      $('.created').val(moment().format('YYYY-MM-DDTHH:mm'));
+
+
+      // 发一个请求去请求所有的分类数据
+      $.get({
+        url: "api/getCategory.php",
+        dataType: "json",
+        success: function (obj) {
+          // console.log(obj);
+          //数组有多少个元素就创建多少个option
+          for (var i = 0; i < obj.length; i++) {
+
+            var opt = document.createElement('option');
+            opt.innerHTML = obj[i].name;
+            opt.value = obj[i].Id;
+            //加到下拉框里
+            $('.category').append(opt);
+          }
+        }
+      });
+
+
+      //按钮的点击事件
+      $('#save1').click(function (e) {
+        e.preventDefault();
+        //拿到界面上的所有数据(这一步拿到了除了content以外的所有内容)
+        var fm = new FormData($('form')[0]);
+        // 如果你想打印一下fm里面有哪些值，不能直接打印fm，而应该用get方法一个一个打印
+        //单独把富文本内容加到FormData里面
+        fm.append('content', $('.summernote1').summernote('code'));
+        // console.log(fm.get('title'));
+
+        //发起一个请求
+        $.post({
+
+          url: "api/addProduct1.php",
+          data: fm,
+          contentType: false,
+          processData: false,
+          dataType: "json",
+          success: function (obj) {
+
+            if (obj.code == 0) {
+
+              //成功，就跳转到文章列表
+              // location = "posts.html";
+            } else {
+
+              alert('新增失败！');
+            }
+          }
+        });
+      });
+      //按钮的点击事件
+      $('#save2').click(function (e) {
+        e.preventDefault();
+        //拿到界面上的所有数据(这一步拿到了除了content以外的所有内容)
+        var fm = new FormData($('form')[1]);
+        // 如果你想打印一下fm里面有哪些值，不能直接打印fm，而应该用get方法一个一个打印
+        //单独把富文本内容加到FormData里面
+        fm.append('content', $('.summernote2').summernote('code'));
+        //发起一个请求
+        $.post({
+
+          url: "api/addProduct2.php",
+          data: fm,
+          contentType: false,
+          processData: false,
+          dataType: "json",
+          success: function (obj) {
+
+            if (obj.code == 0) {
+
+              //成功，就跳转到文章列表
+              // location = "posts.html";
+            } else {
+
+              alert('新增失败！');
+            }
+          }
+        });
+      });
+      //按钮的点击事件
+      $('#save3').click(function (e) {
+        e.preventDefault();
+        //拿到界面上的所有数据(这一步拿到了除了content以外的所有内容)
+        var fm = new FormData($('form')[2]);
+        // 如果你想打印一下fm里面有哪些值，不能直接打印fm，而应该用get方法一个一个打印
+        //单独把富文本内容加到FormData里面
+        fm.append('content', $('.summernote3').summernote('code'));
+        //发起一个请求
+        $.post({
+
+          url: "api/addProduct3.php",
+          data: fm,
+          contentType: false,
+          processData: false,
+          dataType: "json",
+          success: function (obj) {
+
+            if (obj.code == 0) {
+
+              //成功，就跳转到文章列表
+              // location = "posts.html";
+            } else {
+
+              alert('新增失败！');
+            }
+          }
+        });
+      });
+    })
+  </script>
 </body>
 
 </html>
-
-
-<script src="../assets/vendors/wangEditor.min.js"></script>
-<script>
-  //创建编辑器对象
-  $('.summernote').summernote({
-    height: 300, // set editor height
-    minHeight: null, // set minimum height of editor
-    maxHeight: null, // set maximum height of editor
-    focus: true // set focus to editable area after initializing summernote
-  });
-
-
-  //给上传图片加预览功能
-  $('#feature').change(function () {
-
-    var url = URL.createObjectURL(this.files[0]);
-    console.log(url);
-
-    //加到img里去显示
-    $('img.help-block').attr('src', url).show();
-  });
-
-  //让时间元素显示为当前时间
-  $('#created').val(moment().format('YYYY-MM-DDTHH:mm'));
-
-
-  // 发一个请求去请求所有的分类数据
-  $.get({
-    url: "api/getCategory.php",
-    dataType: "json",
-    success: function (obj) {
-
-      // console.log(obj);
-
-      //数组有多少个元素就创建多少个option
-      for (var i = 0; i < obj.length; i++) {
-
-        var opt = document.createElement('option');
-        opt.innerHTML = obj[i].name;
-        opt.value = obj[i].Id;
-        //加到下拉框里
-        $('#category').append(opt);
-      }
-    }
-  });
-
-
-  //按钮的点击事件
-  $('#save').click(function (e) {
-    e.preventDefault();
-
-    //拿到界面上的所有数据(这一步拿到了除了content以外的所有内容)
-    var fm = new FormData($('form')[0]);
-    // 如果你想打印一下fm里面有哪些值，不能直接打印fm，而应该用get方法一个一个打印
-    // console.log(editor.txt.html());
-    // console.log(editor.txt.text());
-    //单独把富文本内容加到FormData里面
-    fm.append('content', editor.txt.html());
-
-    // console.log(fm.get('title'));
-    // console.log(fm.get('content'));
-    // console.log(fm.get('slug'));
-    // console.log(fm.get('feature'));
-    // console.log(fm.get('category'));
-    // console.log(fm.get('created'));
-    // console.log(fm.get('status'));
-
-
-    //发起一个请求
-    $.post({
-
-      url: "api/addPosts.php",
-      data: fm,
-      contentType: false,
-      processData: false,
-      dataType: "json",
-      success: function (obj) {
-
-        if (obj.code == 0) {
-
-          //成功，就跳转到文章列表
-          location = "posts.html";
-        } else {
-
-          alert('新增失败！');
-        }
-      }
-    });
-  });
-</script>

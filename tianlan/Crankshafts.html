@@ -18,7 +18,7 @@
 <body>
     <div id="basement">
         <header>
-            
+
         </header>
         <!-- 下拉菜单 -->
         <nav id="navbar-example" class="navbar navbar-default navbar-static">
@@ -302,8 +302,8 @@
     </div>
     <!-- footer -->
     <footer>
-        <div class="row hidden-xs">
-            <div class="col-md-4 col-sm-4">
+        <div class="row hidden-xs hidden-sm hidden-md">
+            <div class="col-md-4">
                 <h4>关于我们</h4>
                 <ul>
                     <li><a href="#">公司简介</a></li>
@@ -311,14 +311,14 @@
                     <li><a href="#">企业文化</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4">
                 <h4>联系我们</h4>
                 <ul>
                     <li><a href="#">客户服务</a></li>
                     <li><a href="#">合作洽谈</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4">
                 <h4>公司地址</h4>
                 <ul>
                     <li><a href="#">地址：广东省深圳市南山区沙河西路2009号尚美科技大厦1601-1602</a></li>
@@ -363,11 +363,6 @@
                 $('.navbar-nav').html(html);
             }
         })
-        // if (document.body.clientWidth < 450) {
-        //     console.log(document.body.clientWidth);
-        //     $('footer').css("padding", 0)
-        //     $('.media-object').width(150 + 'px')
-        // }
         $.get({
             url: 'http://localhost:80/frontApi/catrgory.php',
             dataType: 'json',
@@ -380,6 +375,52 @@
                 $('.catrgory').html(html);
             }
         })
+
+
+        //分页插件
+        function loadData(page) {
+
+            $.get({
+
+                url: "api/getPosts.php",
+                data: {
+                    pageIndex: page,
+                    pageSize: 10
+                },
+                dataType: "json",
+                success: function (obj) {
+
+                    // console.log(obj);
+                    //调用模板
+                    var html = template('tplTr', {
+                        list: obj.data
+                    });
+                    $('tbody').html(html);
+
+
+                    $('.pagination').twbsPagination({
+                        // 设置总页数
+                        totalPages: obj.totalPages,
+                        // 设置可见页数
+                        visiblePages: 5,
+                        // startPage:3,
+                        // 禁用默认的插件初始化完成自动调用点击事件
+                        initiateStartPageClick: false,
+                        first: "首页",
+                        prev: "上一页",
+                        next: "下一页",
+                        last: "尾页",
+                        // 参数1：事件对象
+                        // 参数2：被点击的页码数
+                        onPageClick: function (event, page) {
+                            // alert(page);
+                            loadData(page);
+                        }
+                    });
+
+                }
+            });
+        }
     };
 </script>
 
