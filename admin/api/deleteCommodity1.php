@@ -1,20 +1,16 @@
-<?php
-
-    //接收提交的id
+<?php 
     $ids = $_POST['ids'];
 
-    //导入文件
     require_once "tools/doSql.php";
-    //准备sql语句
-    $sql = "delete from t_pictures where Id in($ids)";
-    //执行语句
+
+    $sql = "delete from t_product_rod where id in ( $ids )";
+
     $rows = my_zsg($sql);
 
+    
     if($rows > 0 ){
 
         echo '{"msg":"success","code":0}';
     }else{
         echo '{"msg":"fail","code":1}';
     }
-
-?>

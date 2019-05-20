@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version: 5.5.53)
-# Date: 2019-05-15 15:38:18
+# Date: 2019-05-20 09:17:33
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -119,14 +119,14 @@ CREATE TABLE `t_pictures` (
   `interlinkage` varchar(255) DEFAULT NULL COMMENT '轮播图点击跳转链接',
   `post_id` varchar(255) DEFAULT NULL COMMENT '1代表大轮播图2代表小轮播图',
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='轮播图表';
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='轮播图表';
 
 #
 # Data for table "t_pictures"
 #
 
 /*!40000 ALTER TABLE `t_pictures` DISABLE KEYS */;
-INSERT INTO `t_pictures` VALUES (1,'/uploads/car2.png','1','https://www.baidu.com','1'),(2,'/uploads/car3.png','2','https://www.baidu.com','1'),(3,'/uploads/car1.png','3','https://www.baidu.com','1'),(4,'/uploads/1.jpg','1','https://www.baidu.com','2'),(5,'/uploads/4.jpg','2','https://www.baidu.com','2'),(6,'/uploads/5.jpg','3','https://www.baidu.com','2'),(7,'/uploads/6.jpg','曲轴','https://www.baidu.com','2'),(8,'/uploads/two.png','连杆','https://www.baidu.com','2');
+INSERT INTO `t_pictures` VALUES (1,'/uploads/car2.png','1','https://www.baidu.com','1'),(2,'/uploads/car3.png','2','https://www.baidu.com','1'),(3,'/uploads/car1.png','3','https://www.baidu.com','1'),(11,'/uploads/7.png','1111','https://v3.bootcss.com/','1'),(12,'/uploads/1.jpg','1','1','2'),(13,'/uploads/4.jpg','1','1','2'),(14,'/uploads/5.jpg','1','1','2'),(15,'/uploads/6.jpg','1','1','2');
 /*!40000 ALTER TABLE `t_pictures` ENABLE KEYS */;
 
 #
@@ -156,13 +156,14 @@ CREATE TABLE `t_product_bent` (
   `status` varchar(255) DEFAULT NULL COMMENT '文章状态表drafted代表草稿,published代表已发布',
   `content` text COMMENT '富文本编辑器的内容',
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='曲轴商品表';
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COMMENT='曲轴商品表';
 
 #
 # Data for table "t_product_bent"
 #
 
 /*!40000 ALTER TABLE `t_product_bent` DISABLE KEYS */;
+INSERT INTO `t_product_bent` VALUES (8,'售价11800元的小米MIX3 5G手机，你会买吗？','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-17T10:50','drafted','[object Object]'),(9,'售价11800元的小米MIX3 5G手机，你会买吗？','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-17T10:50','drafted','[object Object]'),(10,'北京大兴国际机场装配多款国产先进雷达','','','','','','','','','','3456575647','/uploads/','/uploads/7.png','/uploads/','/uploads/','1','2019-05-17T10:52','drafted','1321243'),(11,'123','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-17T10:57','drafted','[object Object]'),(12,'北京大兴国际机场装配多款国产先进雷达','','','','','','','','','','','/uploads/mao.jpg','/uploads/','/uploads/','/uploads/','1','2019-05-17T10:59','drafted','<p>23544587458</p>'),(13,'1','','','','','','','','','','1','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-17T11:06','drafted','<p>12</p>'),(14,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:20','drafted','<p>1</p>'),(15,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:20','drafted','<p>1</p>'),(16,'1','','','','','','','','','1','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:20','drafted','<p>1</p>'),(17,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:20','drafted','<p>1</p>'),(18,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:20','drafted','<p>1</p>'),(19,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:21','drafted','<p>1</p>'),(20,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:21','drafted','<p>1</p>'),(21,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:21','drafted','<p>1</p>'),(22,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:21','drafted','<p>1</p>'),(23,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:22','drafted','<p>1</p>');
 /*!40000 ALTER TABLE `t_product_bent` ENABLE KEYS */;
 
 #
@@ -192,13 +193,14 @@ CREATE TABLE `t_product_piston` (
   `status` varchar(255) DEFAULT NULL COMMENT '文章状态表drafted代表草稿,published代表已发布',
   `content` text COMMENT '富文本编辑器的内容',
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='活塞商品表';
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='活塞商品表';
 
 #
 # Data for table "t_product_piston"
 #
 
 /*!40000 ALTER TABLE `t_product_piston` DISABLE KEYS */;
+INSERT INTO `t_product_piston` VALUES (2,'123','1111111111','','','','','','','','','3456575647','/uploads/7.png','/uploads/','/uploads/','/uploads/','1','2019-05-17T10:53','drafted','[object Object]'),(3,'北京大兴国际机场装配多款国产先进雷达','','','','','','','','','','','/uploads/mao.jpg','/uploads/7.png','/uploads/','/uploads/','1','2019-05-17T11:00','drafted','啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊');
 /*!40000 ALTER TABLE `t_product_piston` ENABLE KEYS */;
 
 #
@@ -228,11 +230,12 @@ CREATE TABLE `t_product_rod` (
   `status` varchar(255) DEFAULT NULL COMMENT '文章状态表drafted代表草稿,published代表已发布',
   `content` text COMMENT '富文本编辑器的内容',
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='连接杆商品表';
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COMMENT='连接杆商品表';
 
 #
 # Data for table "t_product_rod"
 #
 
 /*!40000 ALTER TABLE `t_product_rod` DISABLE KEYS */;
+INSERT INTO `t_product_rod` VALUES (10,'售价11800元的小米MIX3 5G手机，你会买吗？','2111113','123123','8908','786','21111113','12222223','21111113','','','','/uploads/mao.jpg','/uploads/7.png','/uploads/2.jpg','/uploads/mao.jpg','1','2019-05-16T15:40','drafted','<p><br></p>'),(11,'北京大兴国际机场装配多款国产先进雷达','','','','','','','','','','','/uploads/mao.jpg','/uploads/','/uploads/','/uploads/','2','2019-05-16T15:57','drafted','<p>1243254756987345314123123<br></p>'),(12,'北京大兴国际机场','1','2','3','4','5','','','','12222223','','/uploads/7.png','/uploads/mao.jpg','/uploads/2.jpg','/uploads/','3','2019-05-16T15:57','published','<p>北京大兴国际机场<br></p>'),(13,'售价11800元的小米MIX3 5G手机，你会买吗？','','','','','','','','','','','/uploads/mao.jpg','/uploads/','/uploads/','/uploads/','1','2019-05-17T10:49','drafted','<p>12</p>'),(14,'1','','','','','','','','','','','/uploads/','/uploads/','/uploads/','/uploads/','1','2019-05-18T09:21','drafted','<p>1</p>');
 /*!40000 ALTER TABLE `t_product_rod` ENABLE KEYS */;

@@ -40,9 +40,14 @@
 }
 .media-body{
     padding: .1rem;
+    height: 2.435185rem;
 }
 .media-heading{
+    width: 100%;
+}
+.media-heading a{
     font-size: .185185rem;
+    width: 100%;
 }
 .media-body p{
     font-size: .111111rem;
@@ -80,4 +85,9 @@
 }
 .catrgory3 li p{
     font-size: 10px;
+}
+@media screen and (max-width: 767px){
+    .media-body{
+        height: 4.814815rem;
+    }
 }

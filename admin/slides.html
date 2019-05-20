@@ -180,7 +180,7 @@
     <td>{{value.detailed}}</td>
     <td>{{value.interlinkage}}</td>
     <td class="text-center">
-      <a href="javascript:deleteTr({{ value.picture_id }});" class="btn btn-danger btn-xs">删除</a>
+      <a href="javascript:deleteTr({{ value.Id }});" class="btn btn-danger btn-xs">删除</a>
     </td>
   </tr>
 {{/if}}
@@ -285,7 +285,7 @@
 
   // 单行删除点击事件
   function deleteTr(id){
-
+    console.log(id);
     $.post({
 
       url:"api/deleteSliders.php",
@@ -295,11 +295,11 @@
 
           if(obj.code == 0){
 
-            // location.reload();
+            location.reload();
             //被点击的这一行删掉就行了
             // $('tbody>tr').eq(index).remove();
 
-            $('tbody>tr[index=' + id + ']').remove();
+            // $('tbody>tr[index=' + id + ']').remove();
 
 
             // $('tbody>tr').each(function(){

@@ -61,7 +61,9 @@
             <ul class="list-group">
               <li class="list-group-item"><strong>10</strong>篇文章（<strong>2</strong>篇草稿）</li>
               <li class="list-group-item"><strong>6</strong>个品牌分类</li>
-              <!-- <li class="list-group-item"><strong>5</strong>条评论（<strong>1</strong>条待审核）</li> -->
+              <li class="list-group-item"><strong>5</strong>条连接杆（<strong>1</strong>篇草稿）</li>
+              <li class="list-group-item"><strong>5</strong>条曲轴（<strong>1</strong>篇草稿）</li>
+              <li class="list-group-item"><strong>5</strong>条活塞（<strong>1</strong>篇草稿）</li>
             </ul>
           </div>
         </div>
@@ -133,17 +135,20 @@
     url: "api/getWebInfo.php",
     dataType: "json",
     success: function (obj) {
-
       // console.log(obj);
       $('.list-group-item').eq(0).children().eq(0).html(obj.wenzhang);
       $('.list-group-item').eq(0).children().eq(1).html(obj.caogao);
 
-
       $('.list-group-item').eq(1).children().html(obj.fenlei);
 
+      $('.list-group-item').eq(2).children().eq(0).html(obj.rod);
+      $('.list-group-item').eq(2).children().eq(1).html(obj.rodCaogao);
 
-      // $('.list-group-item').eq(2).children().eq(0).html(obj.pinglun);
-      // $('.list-group-item').eq(2).children().eq(1).html(obj.daishenhe);
+      $('.list-group-item').eq(3).children().eq(0).html(obj.bent);
+      $('.list-group-item').eq(3).children().eq(1).html(obj.bentCaogao);
+
+      $('.list-group-item').eq(4).children().eq(0).html(obj.piston);
+      $('.list-group-item').eq(4).children().eq(1).html(obj.pistonCaogao);
     }
   });
 </script>

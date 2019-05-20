@@ -182,66 +182,74 @@
             <!-- 2 -->
             <form class="row">
               <div class="col-md-9">
-                <div class="form-group">
-                  <label for="title">标题</label>
-                  <input id="title" class="form-control input-sm" name="title" type="text" placeholder="文章标题">
+                <div class="aaa">
+                  <div class="form-group">
+                    <label for="title">标题</label>
+                    <input id="" class="form-control input-sm" name="title" type="text" placeholder="文章标题">
+                  </div>
+                  <div class="form-group">
+                    <label for="brand">品牌</label>
+                    <input id="" class="form-control input-sm" name="brand" type="text" placeholder="品牌名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="engine">发动机</label>
+                    <input id="" class="form-control input-sm" name="engine" type="text" placeholder="发动机名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="part">零件类型</label>
+                    <input id="" class="form-control input-sm" name="part" type="text" placeholder="零件类型名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="centerLength">中心长度</label>
+                    <input id="" class="form-control input-sm" name="centerLength" type="text"
+                      placeholder="中心长度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="aperture">孔径</label>
+                    <input id="" class="form-control input-sm" name="aperture" type="text" placeholder="孔径名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="bigBodywide">大端宽度</label>
+                    <input id="" class="form-control input-sm" name="bigBodywide" type="text"
+                      placeholder="大端宽度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="smallEnddiameter">小端孔直径</label>
+                    <input id="" class="form-control input-sm" name="smallEnddiameter" type="text"
+                      placeholder="小端孔直径名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="smallEndwide">小端宽度</label>
+                    <input id="" class="form-control input-sm" name="smallEndwide" type="text"
+                      placeholder="小端宽度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="light">光束类型</label>
+                    <input id="" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="brand">品牌</label>
-                  <input id="brand" class="form-control input-sm" name="brand" type="text" placeholder="品牌名称">
-                </div>
-                <div class="form-group">
-                  <label for="engine">部件号</label>
-                  <input id="engine" class="form-control input-sm" name="engine" type="text" placeholder="发动机名称">
-                </div>
-                <div class="form-group">
-                  <label for="part">发动机型号</label>
-                  <input id="part" class="form-control input-sm" name="part" type="text" placeholder="零件类型名称">
-                </div>
-                <div class="form-group">
-                  <label for="centerLength">曲轴材质</label>
-                  <input id="centerLength" class="form-control input-sm" name="centerLength" type="text"
-                    placeholder="中心长度名称">
-                </div>
-                <div class="form-group">
-                  <label for="aperture">发动机行程</label>
-                  <input id="aperture" class="form-control input-sm" name="aperture" type="text" placeholder="孔径名称">
-                </div>
-                <div class="form-group">
-                  <label for="bigBodywide">直径</label>
-                  <input id="bigBodywide" class="form-control input-sm" name="bigBodywide" type="text"
-                    placeholder="大端宽度名称">
-                </div>
-                <div class="form-group">
-                  <label for="smallEnddiameter">杆轴 直径</label>
-                  <input id="smallEnddiameter" class="form-control input-sm" name="smallEnddiameter" type="text"
-                    placeholder="小端孔直径名称">
-                </div>
-                <div class="form-group">
-                  <label for="smallEndwide">最小杆长</label>
-                  <input id="smallEndwide" class="form-control input-sm" name="smallEndwide" type="text"
-                    placeholder="小端宽度名称">
-                </div>
-                <div class="form-group">
-                  <label for="light">鲍勃重量</label>
-                  <input id="light" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
-                </div>
-                <div class="form-group">
-                  <label for="light">体重</label>
-                  <input id="light" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="content">文章内容</label>
+                    <div class="summernote summernote2"></div>
+                    <!-- 1111111111111 -->
+                  </div>
+                  <div class="form-group col-md-6">
+                    <button id="save2" class="btn btn-primary" type="submit">保存</button>
+                  </div>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label for="slug">其他</label>
-                  <input id="slug" class="form-control" name="slug" type="text" placeholder="slug">
+                  <input id="" class="form-control" name="slug" type="text" placeholder="slug">
                   <p class="help-block">https://zce.me/post/<strong>slug</strong></p>
                 </div>
                 <div class="form-group">
                   <label for="feature">商品列表图像1</label>
                   <!-- show when image chose -->
                   <img class="help-block thumbnail feature5" style="display: none">
-                  <input id="" class="form-control feature5" name="feature5" type="file">
+                  <input class="form-control feature5" name="feature5" type="file">
                 </div>
                 <div class="form-group">
                   <label for="feature">商品列表图像2</label>
@@ -263,29 +271,21 @@
                 </div>
                 <div class="form-group">
                   <label for="category">所属分类</label>
-                  <select id="category2" class="category form-control" name="category">
+                  <select id="" class="form-control category" name="category">
 
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="created">发布时间</label>
-                  <input id="created2" class="form-control created" name="created" type="datetime-local">
+                  <input id="" class="form-control created" name="created" type="datetime-local">
                 </div>
                 <div class="form-group">
                   <label for="status">状态</label>
-                  <select id="status2" class="form-control" name="status">
-                    <option value="1">草稿</option>
-                    <option value="2">已发布</option>
+                  <select id="" class="form-control" name="status">
+                    <option value="drafted">草稿</option>
+                    <option value="published">已发布</option>
                   </select>
                 </div>
-              </div>
-              <div class="form-group col-md-9">
-                <label for="content">文章内容</label>
-                <div class="summernote summernote2"></div>
-                <!-- 1111111111111 -->
-              </div>
-              <div class="form-group col-md-6">
-                <button id="save2" class="btn btn-primary" type="submit">保存</button>
               </div>
             </form>
           </div>
@@ -293,62 +293,74 @@
             <!-- 3 -->
             <form class="row">
               <div class="col-md-9">
-                <div class="form-group">
-                  <label for="title">标题</label>
-                  <input id="title" class="form-control input-sm" name="title" type="text" placeholder="文章标题">
+                <div class="aaa">
+                  <div class="form-group">
+                    <label for="title">标题</label>
+                    <input id="" class="form-control input-sm" name="title" type="text" placeholder="文章标题">
+                  </div>
+                  <div class="form-group">
+                    <label for="brand">品牌</label>
+                    <input id="" class="form-control input-sm" name="brand" type="text" placeholder="品牌名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="engine">发动机</label>
+                    <input id="" class="form-control input-sm" name="engine" type="text" placeholder="发动机名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="part">零件类型</label>
+                    <input id="" class="form-control input-sm" name="part" type="text" placeholder="零件类型名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="centerLength">中心长度</label>
+                    <input id="" class="form-control input-sm" name="centerLength" type="text"
+                      placeholder="中心长度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="aperture">孔径</label>
+                    <input id="" class="form-control input-sm" name="aperture" type="text" placeholder="孔径名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="bigBodywide">大端宽度</label>
+                    <input id="" class="form-control input-sm" name="bigBodywide" type="text"
+                      placeholder="大端宽度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="smallEnddiameter">小端孔直径</label>
+                    <input id="" class="form-control input-sm" name="smallEnddiameter" type="text"
+                      placeholder="小端孔直径名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="smallEndwide">小端宽度</label>
+                    <input id="" class="form-control input-sm" name="smallEndwide" type="text"
+                      placeholder="小端宽度名称">
+                  </div>
+                  <div class="form-group">
+                    <label for="light">光束类型</label>
+                    <input id="" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="brand">品牌</label>
-                  <input id="brand" class="form-control input-sm" name="brand" type="text" placeholder="品牌名称">
-                </div>
-                <div class="form-group">
-                  <label for="engine">发动机</label>
-                  <input id="engine" class="form-control input-sm" name="engine" type="text" placeholder="发动机名称">
-                </div>
-                <div class="form-group">
-                  <label for="part">零件类型</label>
-                  <input id="part" class="form-control input-sm" name="part" type="text" placeholder="零件类型名称">
-                </div>
-                <div class="form-group">
-                  <label for="centerLength">中心长度</label>
-                  <input id="centerLength" class="form-control input-sm" name="centerLength" type="text"
-                    placeholder="中心长度名称">
-                </div>
-                <div class="form-group">
-                  <label for="aperture">孔径</label>
-                  <input id="aperture" class="form-control input-sm" name="aperture" type="text" placeholder="孔径名称">
-                </div>
-                <div class="form-group">
-                  <label for="bigBodywide">大端宽度</label>
-                  <input id="bigBodywide" class="form-control input-sm" name="bigBodywide" type="text"
-                    placeholder="大端宽度名称">
-                </div>
-                <div class="form-group">
-                  <label for="smallEnddiameter">小端孔直径</label>
-                  <input id="smallEnddiameter" class="form-control input-sm" name="smallEnddiameter" type="text"
-                    placeholder="小端孔直径名称">
-                </div>
-                <div class="form-group">
-                  <label for="smallEndwide">小端宽度</label>
-                  <input id="smallEndwide" class="form-control input-sm" name="smallEndwide" type="text"
-                    placeholder="小端宽度名称">
-                </div>
-                <div class="form-group">
-                  <label for="light">光束类型</label>
-                  <input id="light" class="form-control input-sm" name="light" type="text" placeholder="光束类型名称">
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="content">文章内容</label>
+                    <div class="summernote summernote3"></div>
+                    <!-- 1111111111111 -->
+                  </div>
+                  <div class="form-group col-md-6">
+                    <button id="save3" class="btn btn-primary" type="submit">保存</button>
+                  </div>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label for="slug">其他</label>
-                  <input id="slug" class="form-control" name="slug" type="text" placeholder="slug">
+                  <input id="" class="form-control" name="slug" type="text" placeholder="slug">
                   <p class="help-block">https://zce.me/post/<strong>slug</strong></p>
                 </div>
                 <div class="form-group">
                   <label for="feature">商品列表图像1</label>
                   <!-- show when image chose -->
                   <img class="help-block thumbnail feature9" style="display: none">
-                  <input id="" class="form-control feature9" name="feature9" type="file">
+                  <input class="form-control feature9" name="feature9" type="file">
                 </div>
                 <div class="form-group">
                   <label for="feature">商品列表图像2</label>
@@ -385,14 +397,6 @@
                     <option value="published">已发布</option>
                   </select>
                 </div>
-              </div>
-              <div class="form-group col-md-9">
-                <label for="content">文章内容</label>
-                <div class="summernote summernote3"></div>
-                <!-- 1111111111111 -->
-              </div>
-              <div class="form-group col-md-6">
-                <button id="save3" class="btn btn-primary" type="submit">保存</button>
               </div>
             </form>
           </div>
@@ -461,6 +465,7 @@
   <script>
     $(function () {
       changeBianji()
+
       function changeBianji() {
         // var normalHeight = 400
         // const formHeight = $($('form')[0]).height()
@@ -539,8 +544,8 @@
 
             if (obj.code == 0) {
 
-              //成功，就跳转到文章列表
-              // location = "posts.html";
+              //成功，刷新
+              location = "commodity.html";
             } else {
 
               alert('新增失败！');
@@ -569,7 +574,7 @@
             if (obj.code == 0) {
 
               //成功，就跳转到文章列表
-              // location = "posts.html";
+              location = "commodity.html";
             } else {
 
               alert('新增失败！');
@@ -598,7 +603,7 @@
             if (obj.code == 0) {
 
               //成功，就跳转到文章列表
-              // location = "posts.html";
+              location = "commodity.html";
             } else {
 
               alert('新增失败！');
