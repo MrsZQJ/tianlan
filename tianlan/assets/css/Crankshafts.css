@@ -1,33 +1,11 @@
-.choose{
-    background-color: #000000;
-}
-#drop2{
-    color: white;
-}
 .breadcrumb{
     margin: 0; 
 }
-.conter-left{
-    margin-top: .15rem;
-}
-.conter-right{
-    padding: 0;
-}
-.conter-right-top2{
-    height: 30px;
-    background: url('../image/cpflr_h3.png');
-    color: aliceblue;
-    line-height: 30px;
-    font-size: .12963rem;
-    padding-left: 25px;
-}
 .conter-right-con{
-    background-color: #cccccc;
     padding: .1rem;
 }
 .media{
     border-bottom: 1px solid #dcdcdc;
-    background-color: #ffffff;
     padding-bottom: .05rem;
     position: relative;
 }

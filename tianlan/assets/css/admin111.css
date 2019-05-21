@@ -1,43 +1,17 @@
-.conter-right-top {
-    /* height: 1.06rem; */
+.conter-right .list-group .list-group-item {
+    border: 0;
+    font-size: .166667rem;
+    padding: 8px 15px !important;
+    margin-bottom: .15rem;
     overflow: hidden;
-    background-color: #d2d2d2;
-    /* width: 4.15rem; */
-    /* margin: 0 auto */
 }
-
-.conter-right-top a {
-    display: block;
-}
-
-.kong {
-    height: .08rem;
-    background-color: #e5e5e5;
-}
-
 .conter-right {
-    background-color: #d2d2d2;
-    overflow: hidden;
+    background-color: #cfcfcf;
 }
-
-.conter-right p {
-    display: block;
-    color: black;
-    font-weight: 700;
-    font-size: .185185rem;
-    margin-bottom: 0;
-    padding: 6px 0;
-    background-color: #d2d2d2;
-    margin-left: .138889rem;
-}
-
 .content-cent {
-    /* padding-left: .075rem; */
-    /* padding: .15rem; */
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    /* padding-top: .05rem; */
 }
 
 .cent {
@@ -75,22 +49,8 @@
     text-decoration: underline
 }
 
-
-
 .newxx {
     margin-top: .15rem;
-}
-
-.new_li {
-    overflow: hidden;
-}
-
-.new_li a {
-    float: left;
-}
-
-.new_li span {
-    float: right;
 }
 
 .carousel-inner {
@@ -102,41 +62,6 @@
     width: 100%;
     height: 100%;
 }
-
-.newone p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
-
-.new_li a {
-    font-family: 'Arial';
-}
-
-.newlist {
-    width: 100%;
-    margin-top: .15rem;
-}
-
-.newlist li {
-    margin-top: .05rem;
-    border-bottom: 1px dashed #cccccc;
-}
-
-.newlist li a {
-    width: 60%;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.newlist li span {
-    float: right;
-}
-
 
 /* swiper */
 .swiper-container2 {
@@ -157,16 +82,8 @@
 }
 
 /* 媒体查询 */
-@media screen and (max-width: 1280px) {
-    footer {
-        padding: .1rem;
-    }
-
-    .content-cent {
-        justify-content: space-between;
-    }
-
-    #basement {
-        width: 100%;
+@media screen and (max-width: 1299px) {
+    .conter-right .list-group .list-group-item {
+        margin-top: 0;
     }
 }

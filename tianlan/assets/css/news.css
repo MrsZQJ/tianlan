@@ -1,32 +1,5 @@
-.choose {
-    background-color: #000000;
-}
-
-#drop3 {
-    color: white;
-}
-
 .breadcrumb {
     margin: 0;
-}
-
-.conter-left {
-    margin-top: .15rem;
-}
-
-.conter-right {
-    padding: 0;
-
-}
-
-.conter-right-top {}
-
-.conter-right-top2 {
-    height: 30px;
-    background: url('../image/cpflr_h3.png');
-    color: aliceblue;
-    line-height: 30px;
-
 }
 
 .conter-right-con {
@@ -35,47 +8,9 @@
 
 }
 
-.catrgory2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.catrgory2 li img {
-    width: 190px;
-    height: 190px;
-}
-
-.catrgory2 li {
-    width: 192px;
-    height: 265px;
-}
-
-.catrgory3 {
-    text-align: left;
-    padding: 20px;
-}
-
-.catrgory3 li {
-    list-style: square;
-}
-
-.catrgory3 li a {
-    color: #003366;
-    font-size: 14px;
-}
-
-.catrgory3 li p {
-    font-size: 10px;
-}
-
-
 /* 新闻样式 */
 .news {
     width: 100%;
-    /* min-height: 570px; */
 }
 
 .news li {
@@ -98,6 +33,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 @media screen and (max-width: 768px) {
     .news {
         min-height: 570px;

@@ -7,16 +7,11 @@ require_once 'tool/doSql.php';
 $sql="select * from t_product_rod order by Id desc limit $start,$pageSize";
 $sql2="select * from t_product_rod";
 if($catrgoryNum!=0){
-    // $sql .= "  where category = '$catrgoryNum'";
-    $sql="select * from t_product_rod where category = '$catrgoryNum' order by Id desc limit $start,$pageSize";
-    $sql2 .= "  where category = '$catrgoryNum'";
+    $sql="select * from t_product_rod where category = $catrgoryNum order by Id desc limit $start,$pageSize";
+    $sql2 .= "  where category = $catrgoryNum ";
 }
 $data=my_select($sql);
 $count = count(my_select($sql2));
-// $sql="select * from t_product_rod order by Id desc limit $start,$pageSize";
-// $data=my_select($sql);
-// $sql2="select * from t_product_rod";
-// $count = count(my_select($sql2));
 
     //计算出总页数
     $totalPages = ceil($count / $pageSize);

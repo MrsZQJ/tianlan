@@ -1,25 +1,31 @@
-.news-detail-title{
-    /* height: 50px; */
+.news-detail-title {
     overflow: hidden;
-    /* line-height: 50px; */
     border-bottom: 1px solid #cccccc;
     text-align: center;
     color: #af0d0d;
     font-weight: 700;
 }
-.news-detail-auth{
+
+.news-detail-auth {
     padding: .035rem .3rem;
     display: flex;
     justify-content: space-around;
 }
-.news-detail-auth span{
+
+.news-detail-auth span {
     font-size: .12963rem;
 }
-.news-detail-content{
+
+.news-detail-content {
     padding: .111111rem;
 }
+
+.breadcrumb {
+    margin: 0;
+}
+
 @media screen and (max-width: 768px) {
-    .news-detail-content{
+    .news-detail-content {
         min-height: 426px;
     }
 }

@@ -1,93 +1,51 @@
-.choose{
-    background-color: #000000;
+.breadcrumb {
+    margin: 0;
 }
-#drop1{
-    color: white;
-}
-.breadcrumb{
-    margin: 0; 
-}
-.conter-left{
-    margin-top: .15rem;
-}
-.conter-right{
-    padding: 0;
-}
-.conter-right-top{
+
+.conter-right-top {
     padding: .075rem;
 }
-.conter-right-top2{
-    height: 30px;
-    background: url('../image/cpflr_h3.png');
-    color: aliceblue;
-    line-height: 30px;
-    font-size: .12963rem;
-    padding-left: 25px;
-}
-.conter-right-con{
-    background-color: #cccccc;
+
+.conter-right-con {
     padding: .1rem;
 }
-.media{
+
+.media {
     border-bottom: 1px solid #dcdcdc;
-    background-color: #ffffff;
     padding-bottom: .05rem;
     position: relative;
 }
-.media-middle{
+
+.media-middle {
     border: 1px #dcdcdc dashed;
     width: 37%;
 }
-.media-body{
+
+.media-body {
     padding: .1rem;
     height: 2.435185rem;
 }
-.media-heading{
-    width: 100%;
-}
-.media-heading a{
-    font-size: .185185rem;
-    width: 100%;
-}
-.media-body p{
-    font-size: .111111rem;
-    line-height: .12963rem;
-}
-.media-object{
+
+.media-heading {
     width: 100%;
 }
 
-.catrgory2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+.media-heading a {
+    font-size: .185185rem;
+    width: 100%;
 }
-.catrgory2 li img{
-    width: 190px;
-    height: 190px;
+
+.media-body p {
+    font-size: .111111rem;
+    line-height: .12963rem;
 }
-.catrgory2 li{
-    width: 192px;
-    height: 265px;
+
+.media-object {
+    width: 100%;
 }
-.catrgory3{
-    text-align: left;
-    padding: 20px;
-}
-.catrgory3 li{
-    list-style: square;
-}
-.catrgory3 li a{
-    color: #003366;
-    font-size: 14px;
-}
-.catrgory3 li p{
-    font-size: 10px;
-}
-@media screen and (max-width: 767px){
-    .media-body{
+
+@media screen and (max-width: 767px) {
+    .media-body {
         height: 4.814815rem;
     }
 }

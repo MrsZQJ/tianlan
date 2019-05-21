@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>活塞</title>
+    <title>曲轴详情</title>
     <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/Pistons.css">
+    <link rel="stylesheet" href="./assets/css/bent-detail.css">
     <link rel="stylesheet" href="./assets/vendors/font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="./assets/vendors/jQuery-tbcp/css/jquery.imagezoom.css">
     <script src="./assets/vendors/rem.js"></script>
 </head>
 
@@ -29,8 +30,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="./index.html"><i class="fa fa-home"
-                            style="font-size:30rpx;color: aqua"></i></a>
+                    <a class="navbar-brand" href="./index.html"><i class="fa fa-home"></i></a>
                     <div class="sousuo2 visible-xs">
                         <div class="input-group input-group-md">
                             <input type="text" class="form-control sousuo-ipt" placeholder="Search" />
@@ -43,11 +43,11 @@
                 <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
                     <ul class="nav navbar-nav dropdown-fat">
                         <!-- <li class="dropdown">
-                            <a href="./ConnectingRods.html">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;连杆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                            </a>
-                        </li> -->
+                                            <a href="./ConnectingRods.html">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;连杆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                                            </a>
+                                        </li> -->
                     </ul>
                 </div>
                 <!-- /.nav-collapse -->
@@ -66,25 +66,13 @@
         <!-- 面包屑 -->
         <ul class="breadcrumb">
             <li><a href="./index.html">首页-----产品展示</a></li>
-            <li class="active">活塞</li>
+            <li class="active"><a href="./Crankshafts.html">曲轴</a></li>
+            <li class="active">曲轴详情</li>
         </ul>
         <!-- 分类信息页面 -->
         <div class="conter">
             <div class="row">
                 <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
-                    <div class="conter-left catrgory-car">
-                        <div class="list-group">
-                            <a href="javascript:" class="list-group-item active" style="border: 0">
-                                Make/Engine
-                            </a>
-                            <a href="ConnectingRods.html" class="conter-left-top-a">——— Connecting rods ———</a>
-                            <a href="#" class="list-group-item">24*7 支持</a>
-                            <a href="#" class="conter-left-top-a">——— Crankshafts ————</a>
-                            <a href="#" class="conter-left-top-a">——— Pistons ——————</a>
-                            <a href="#" class="conter-left-top-a">——Connecting rods bolts——</a>
-                            <a href="#" class="conter-left-top-a">——— Gallery ——————</a>
-                        </div>
-                    </div>
                     <div class="conter-left">
                         <div class="list-group">
                             <a href="javascript:" class="list-group-item active" style="border: 0">
@@ -176,43 +164,76 @@
                 </div>
                 <div class="col-md-9 col-xs-12 you">
                     <div class="conter-right ">
-                        <div class="list-group">
-                            <a href="javascript:" class="list-group-item active" style="border: 0">
-                                Make/Engine
-                            </a>
-                            <div class="conter-right-con">
-                                <!-- 分类 -->
-                                <!-- <div class="media">
-                                            <div class="media-left media-middle">
-                                                <img src="./assets/image/img/010aj.jpg" class="media-object">
+                        <div class="conter-right-top2">&nbsp;&nbsp;&nbsp;新闻</div>
+                        <div class="conter-right-con">
+                            <!-- 曲轴详情 -->
+                            <div class="bent-detail">
+                                <div class="bent-detail-product">
+                                    <div class="row details">
+                                        <div class="col-md-6">
+                                            <div class="box">
+
+                                                <div class="tb-booth tb-pic tb-s310">
+                                                    <a href="../uploads/6.jpg"><img src="../uploads/6.jpg" alt=""
+                                                            rel="../uploads/6.jpg" class="jqzoom" /></a>
+                                                </div>
+
+                                                <ul class="tb-thumb" id="thumblist">
+                                                    <li class="tb-selected">
+                                                        <div class="tb-pic tb-s40"><a href="#"><img
+                                                                    src="../uploads/6.jpg" mid="../uploads/6.jpg"
+                                                                    big="../uploads/6.jpg"></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tb-pic tb-s40"><a href="#"><img
+                                                                    src="../uploads/4.jpg" mid="../uploads/4.jpg"
+                                                                    big="../uploads/4.jpg"></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tb-pic tb-s40"><a href="#"><img
+                                                                    src="../uploads/5.jpg" mid="../uploads/5.jpg"
+                                                                    big="../uploads/5.jpg"></a></div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="media-body">
-                                                <h4 class="media-heading"><a href="#">比赛连杆（6） - TOYOTA 1GR-FE</a></h4>
-                                                <p>品牌：Hurricane * </p>
-                                                <p>发动机：丰田1GR-FE</p>
-                                                <p>零件类型：连杆</p>
-                                                <p>中心长度：160mm </p>
-                                                <p>/ 6.299“大端孔直径：58.98mm / 2.322” </p>
-                                                <p>大端宽度：20.83mm / 0.820“ </p>
-                                                <p>小端孔直径：20mm / 0.866“ </p>
-                                                <p>小端宽度：20.83mm /0.820” </p>
-                                                <p>光束类型：H型光束更多</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="parameters">
+                                                <!-- <div class="media">
+                                                    <div class=" media-body">
+                                                        <h4 class="media-heading"><a href="#">比赛连杆（6） - TOYOTA
+                                                                1GR-FE</a></h4>
+                                                        <p>品牌：Hurricane * </p>
+                                                        <p>发动机：丰田1GR-FE</p>
+                                                        <p>零件类型：连杆</p>
+                                                        <p>中心长度：160mm </p>
+                                                        <p>/ 6.299“大端孔直径：58.98mm / 2.322” </p>
+                                                        <p>大端宽度：20.83mm / 0.820“ </p>
+                                                        <p>小端孔直径：20mm / 0.866“ </p>
+                                                        <p>小端宽度：20.83mm /0.820” </p>
+                                                        <p>光束类型：H型光束更多</p>
+                                                    </div>
+                                                </div> -->
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">免费域名注册</li>
+                                                    <li class="list-group-item">免费 Window 空间托管</li>
+                                                    <li class="list-group-item">图像的数量</li>
+                                                </ul>
                                             </div>
-                                        </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bent-detail-content">
+
+                                </div>
                             </div>
                         </div>
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li class="disabled"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
     <!-- footer -->
@@ -247,154 +268,126 @@
         </div>
     </footer>
     <script src="./assets/vendors/jquery/jquery.js"></script>
+    <script src="./assets/vendors/jQuery-tbcp/js/jquery.imagezoom.min.js"></script>
     <script src="./assets/vendors/bootstrap/js/bootstrap.js"></script>
     <script src="./assets/vendors/page/jquery.twbsPagination.min.js"></script>
     <script src="./assets/vendors/template-web.js"></script>
 </body>
 <script type="text/html" id="nav">
-    {{each list value}}
-    <li class="{{if value.name=='活塞'}} active {{else}} dropdown  {{/if}}">
+    {{each list value index}}
+    <li class="{{if value.name=="活塞"}} active  {{else}} dropdown {{/if}} ">
         <a href="{{value.link}}">
             {{value.name}}
         </a>
     </li>
     {{/each}}
 </script>
-<script type="text/html" id="category">
-    <div class="list-group">
-        <a href="javascript:" class="list-group-item active" style="border: 0">
-            Make/Engine
-        </a>
-        <a href="ConnectingRods.html" class="list-group-item">——— Connecting rods ———</a>
-        {{each list value}}
-        <a href="javascript:loadData(1,{{value.Id}})" class="list-group-item">{{value.name}}</a>
-        {{/each}}
-        <a href="javascript:loadData(1,0)" class="list-group-item">▶ 其它</a>
-        <a href="#" class="list-group-item">——— Crankshafts ————</a>
-        <a href="#" class="list-group-item">——— Pistons ——————</a>
-        <a href="#" class="list-group-item">——Connecting rods bolts——</a>
-        <a href="#" class="list-group-item">——— Gallery ——————</a>
-    </div>
-</script>
-<script type="text/html" id="product_piston">
+<script type="text/html" id="product_bent">
     {{each list value}}
-    <div class="media">
-        <div class="media-left media-middle">
-            <img src="{{value.masterMap}}" class="media-object">
-        </div>
-        <div class=" media-body">
-            <h4 class="media-heading"><a href="product_pistonDetails.html?id={{value.Id}}">{{value.title}}</a>
-            </h4>
-            {{if value.brand!=''}}
-            <p>品牌：{{value.brand}}</p>
-            {{/if}}
-            {{if value.engine!=''}}
-            <p>发动机：{{value.engine}}</p>
-            {{/if}}
-            {{if value.part!=''}}
-            <p>零件类型：{{value.part}}</p>
-            {{/if}}
-            {{if value.centerLength!=''}}
-            <p>中心长度：{{value.centerLength}}</p>
-            {{/if}}
-            {{if value.aperture!=''}}
-            <p>大端孔直径：{{value.aperture}}</p>
-            {{/if}}
-            {{if value.bigBodywide!=''}}
-            <p>大端宽度：{{value.bigBodywide}}</p>
-            {{/if}}
-            {{if value.smallEnddiameter!=''}}
-            <p>小端孔直径：{{value.smallEnddiameter}}</p>
-            {{/if}}
-            {{if value.smallEndwide!=''}}
-            <p>小端宽度：{{value.smallEndwide}}</p>
-            {{/if}}
-            {{if value.light!=''}}
-            <p>光束类型：{{value.light}}</p>
-            {{/if}}
+    <div class="col-md-4 col-md-offset-1">
+        <div class="box">
+            <div class="tb-booth tb-pic tb-s310">
+                <a href="javascript:"><img src="{{value.feature1}}" alt="" rel="{{value.feature1}}"
+                        class="jqzoom" /></a>
+            </div>
+
+            <ul class="tb-thumb" id="thumblist">
+                {{each value.arr img}}
+                <li>
+                    <div class="tb-pic tb-s40"><a href="javascript:"><img src="{{img}}" mid="{{img}}" big="{{img}}"></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
         </div>
     </div>
-
+    <div class="col-md-6">
+        <div class="parameters">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4>{{value.title}}</h4>
+                </li>
+                {{if value.brand!=''}}
+                <li class="list-group-item">品牌：{{value.brand}}</li>
+                {{/if}}
+                {{if value.engine!=''}}
+                <li class="list-group-item">发动机：{{value.engine}}</li>
+                {{/if}}
+                {{if value.part!=''}}
+                <li class="list-group-item">零件类型：{{value.part}}</li>
+                {{/if}}
+                {{if value.centerLength!=''}}
+                <li class="list-group-item">中心长度：{{value.centerLength}}</li>
+                {{/if}}
+                {{if value.aperture!=''}}
+                <li class="list-group-item">大端孔直径：{{value.aperture}}</li>
+                {{/if}}
+                {{if value.bigBodywide!=''}}
+                <li class="list-group-item">大端宽度：{{value.bigBodywide}}</li>
+                {{/if}}
+                {{if value.smallEnddiameter!=''}}
+                <li class="list-group-item">小端孔直径：{{value.smallEnddiameter}}</li>
+                {{/if}}
+                {{if value.smallEndwide!=''}}
+                <li class="list-group-item">小端宽度：{{value.smallEndwide}}</li>
+                {{/if}}
+                {{if value.light!=''}}
+                <li class="list-group-item">光束类型：{{value.light}}</li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
     {{/each}}
 </script>
 <script>
-    loadData(1, 0)
-    var catrgoryNumOn = null
-    //分页插件
-    function loadData(page, catrgoryNum) {
-        catrgoryNumOn = catrgoryNum
-        $.get({
-
-            url: "http://localhost:80/frontApi/product_piston.php",
-            data: {
-                pageIndex: page,
-                pageSize: 10,
-                catrgoryNum: catrgoryNum
-            },
-            dataType: "json",
-            success: function (obj) {
-                for (var i = 0; i <= obj.data.length - 1; i++) {
-                    if (obj.data[i].feature1 != "/uploads/") {
-                        obj.data[i].masterMap = obj.data[i].feature1
-                    } else if (obj.data[i].feature2 != "/uploads/") {
-                        obj.data[i].masterMap = obj.data[i].feature2
-                    } else if (obj.data[i].feature3 != "/uploads/") {
-                        obj.data[i].masterMap = obj.data[i].feature3
-                    } else if (obj.data[i].feature4 != "/uploads/") {
-                        obj.data[i].masterMap = obj.data[i].feature4
-                    }
-                }
-                var html = template('product_piston', {
-                    list: obj.data
-                });
-                $('.conter-right-con').html(html);
-                $('.pagination').twbsPagination('destroy');
-                $('.pagination').twbsPagination({
-                    // 设置总页数
-                    totalPages: obj.totalPages,
-                    // 设置可见页数
-                    visiblePages: 5,
-                    // startPage:3,
-                    startPage: page,
-                    // 禁用默认的插件初始化完成自动调用点击事件
-                    initiateStartPageClick: false,
-                    first: "首页",
-                    prev: "上一页",
-                    next: "下一页",
-                    last: "尾页",
-                    // 参数1：事件对象
-                    // 参数2：被点击的页码数
-                    onPageClick: function (event, page) {
-                        loadData(page, catrgoryNumOn);
-                    }
-                });
-
-            }
-        });
-    }
     window.onload = function () {
         $.get({
             url: 'http://localhost:80/frontApi/nav.php',
             dataType: 'json',
             success: function (obj) {
-                // console.log(obj);
                 const html = template('nav', {
                     list: obj
                 })
-                // console.log(html);
                 $('.navbar-nav').html(html);
             }
         })
+        var Id = location.href.split('=')[1]
         $.get({
-            url: 'http://localhost:80/frontApi/catrgory.php',
+            url: 'http://localhost:80/frontApi/product_pistonDetails.php',
+            data: {
+                pageId: Id,
+            },
             dataType: 'json',
             success: function (obj) {
+                obj[0].arr = []
+                if (obj[0].feature1 != '/uploads/') {
+                    obj[0].arr.push(obj[0].feature1)
+                }
+                if (obj[0].feature2 != '/uploads/') {
+                    obj[0].arr.push(obj[0].feature2)
+                }
+                if (obj[0].feature3 != '/uploads/') {
+                    obj[0].arr.push(obj[0].feature3)
+                }
+                if (obj[0].feature4 != '/uploads/') {
+                    obj[0].arr.push(obj[0].feature4)
+                }
                 // console.log(obj);
-                const html = template('category', {
+                $('title').html(obj[0].title)
+                var html = template('product_bent', {
                     list: obj
-                })
+                });
                 // console.log(html);
-                $('.catrgory-car').html(html);
+                $('.details').html(html);
+                $(".jqzoom").imagezoom();
+
+                $("#thumblist li a").click(function () {
+                    $(this).parents("li").addClass("tb-selected").siblings().removeClass(
+                        "tb-selected");
+                    $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+                    $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+                });
+                $('.bent-detail-content').html(obj[0].content)
             }
         })
     };

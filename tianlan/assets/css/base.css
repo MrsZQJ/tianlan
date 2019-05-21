@@ -62,7 +62,6 @@ header {
 
 .sousuo-ipt {
     background: #ffffff;
-
 }
 
 #carousel-example-generic {
@@ -70,7 +69,6 @@ header {
 }
 
 #carousel-example-generic img {
-    /* width: 11.55rem; */
     height: 1rem;
 }
 
@@ -78,14 +76,13 @@ header {
     width: 100%;
     background-color: #e5e5e5;
     overflow: hidden;
-
+    padding-right: .15rem;
 }
 
 .conter-left {
-    border: 1px solid black;
     width: 2.314815rem;
     margin-left: .416667rem;
-    margin-top: .22rem;
+    margin-top: .15rem;
     background-color: #ffffff;
     text-align: center;
     overflow: hidden;
@@ -109,30 +106,11 @@ header {
     color: white;
     line-height: .324074rem;
 }
-
-.catrgory {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
+.conter-right {
+    background-color: #ffffff;
+    margin-top: .15rem;
+    padding: 0;
 }
-
-.catrgory li {
-    padding: 10px 30px;
-
-}
-
-.catrgory li a {
-    font-size: .12963rem;
-    color: #333333;
-
-}
-
-/* .catrgory li a:hover {
-    text-decoration: underline
-} */
-
-
 /* footer */
 footer {
     background-color: #1c1c1c;
@@ -140,12 +118,6 @@ footer {
 }
 
 footer .row {
-    /* height: 270px; */
-
-    /* width: 100%; */
-    /* position: absolute; */
-    /* bottom: -270px; */
-
     padding-left: .8rem;
     color: #ffffff
 }
@@ -175,6 +147,18 @@ footer .row>div {
     width: 1.5rem;
     text-align: center;
 }
+/* bootstrop样式修改 */
+.list-group-item.active{
+    background-image: url('../image/cpflr_h3.png') !important;
+}   
+.badge{
+    background-color: #418bca;
+}
+.thumbnail{
+    margin-bottom: 0;
+}
+
+
 
 @media screen and (max-width: 750px) {
     .dropdown-fat li {
@@ -192,5 +176,8 @@ footer .row>div {
     }
     #basement{
         width: 100%;
+    }
+    .conter{
+        padding-right: 0;
     }
 }
