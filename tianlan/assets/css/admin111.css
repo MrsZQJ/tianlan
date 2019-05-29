@@ -8,16 +8,9 @@
 .conter-right {
     background-color: #cfcfcf;
 }
-.content-cent {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
 
 .cent {
     text-align: center;
-    /* width: 2.203704rem; */
-    /* height: 300px; */
 }
 
 .cent img {
@@ -25,9 +18,12 @@
 }
 
 .cent a {
-    font-size: .12963rem;
+    font-size: 12px;
     display: block;
     margin: .1rem 0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
 }
 
 .cent a:hover {
@@ -85,5 +81,13 @@
 @media screen and (max-width: 1299px) {
     .conter-right .list-group .list-group-item {
         margin-top: 0;
+    }
+    /* .cent {
+        height: auto;
+    } */
+}
+@media screen and (max-width: 768px) {
+    .content-cent{
+        padding: 0 15px;
     }
 }

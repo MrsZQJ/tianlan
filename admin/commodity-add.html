@@ -10,8 +10,6 @@
     xhr.send();
 
     xhr.onload = function () {
-
-      // console.log(xhr.responseText);
       // 转成JS数据
       var obj = JSON.parse(xhr.responseText);
 
@@ -201,8 +199,7 @@
                   </div>
                   <div class="form-group">
                     <label for="centerLength">中心长度</label>
-                    <input id="" class="form-control input-sm" name="centerLength" type="text"
-                      placeholder="中心长度名称">
+                    <input id="" class="form-control input-sm" name="centerLength" type="text" placeholder="中心长度名称">
                   </div>
                   <div class="form-group">
                     <label for="aperture">孔径</label>
@@ -210,8 +207,7 @@
                   </div>
                   <div class="form-group">
                     <label for="bigBodywide">大端宽度</label>
-                    <input id="" class="form-control input-sm" name="bigBodywide" type="text"
-                      placeholder="大端宽度名称">
+                    <input id="" class="form-control input-sm" name="bigBodywide" type="text" placeholder="大端宽度名称">
                   </div>
                   <div class="form-group">
                     <label for="smallEnddiameter">小端孔直径</label>
@@ -220,8 +216,7 @@
                   </div>
                   <div class="form-group">
                     <label for="smallEndwide">小端宽度</label>
-                    <input id="" class="form-control input-sm" name="smallEndwide" type="text"
-                      placeholder="小端宽度名称">
+                    <input id="" class="form-control input-sm" name="smallEndwide" type="text" placeholder="小端宽度名称">
                   </div>
                   <div class="form-group">
                     <label for="light">光束类型</label>
@@ -312,8 +307,7 @@
                   </div>
                   <div class="form-group">
                     <label for="centerLength">中心长度</label>
-                    <input id="" class="form-control input-sm" name="centerLength" type="text"
-                      placeholder="中心长度名称">
+                    <input id="" class="form-control input-sm" name="centerLength" type="text" placeholder="中心长度名称">
                   </div>
                   <div class="form-group">
                     <label for="aperture">孔径</label>
@@ -321,8 +315,7 @@
                   </div>
                   <div class="form-group">
                     <label for="bigBodywide">大端宽度</label>
-                    <input id="" class="form-control input-sm" name="bigBodywide" type="text"
-                      placeholder="大端宽度名称">
+                    <input id="" class="form-control input-sm" name="bigBodywide" type="text" placeholder="大端宽度名称">
                   </div>
                   <div class="form-group">
                     <label for="smallEnddiameter">小端孔直径</label>
@@ -331,8 +324,7 @@
                   </div>
                   <div class="form-group">
                     <label for="smallEndwide">小端宽度</label>
-                    <input id="" class="form-control input-sm" name="smallEndwide" type="text"
-                      placeholder="小端宽度名称">
+                    <input id="" class="form-control input-sm" name="smallEndwide" type="text" placeholder="小端宽度名称">
                   </div>
                   <div class="form-group">
                     <label for="light">光束类型</label>
@@ -467,18 +459,6 @@
       changeBianji()
 
       function changeBianji() {
-        // var normalHeight = 400
-        // const formHeight = $($('form')[0]).height()
-        // const aaaHeight = $('.aaa').height()
-        // // console.log(formHeight);
-        // // console.log(aaaHeight);
-        // if (formHeight > aaaHeight) {
-        //   if(formHeight-aaaHeight>400){
-        //     normalHeight=formHeight-aaaHeight
-        //     $('#summernote').summernote('destroy')
-        //   }
-        // }
-        // console.log(normalHeight);
         //创建编辑器对象
         $('.summernote').summernote({
           height: 500, // set editor height
@@ -491,9 +471,7 @@
       //给上传图片加预览功能
       for (var i = 1; i <= 12; i++) {
         $(`input.feature${i}`).change(function () {
-          // console.log(this);
           var url = URL.createObjectURL(this.files[0]);
-          // console.log($(this).attr('class').split(" ")[1].split('feature')[1]);
           const c = $(this).attr('class').split(" ")[1].split('feature')[1]
           //加到img里去显示
           $(`img.feature${c}`).attr('src', url).show();
@@ -508,7 +486,6 @@
         url: "api/getCategory.php",
         dataType: "json",
         success: function (obj) {
-          // console.log(obj);
           //数组有多少个元素就创建多少个option
           for (var i = 0; i < obj.length; i++) {
 
@@ -525,12 +502,15 @@
       //按钮的点击事件
       $('#save1').click(function (e) {
         e.preventDefault();
+        if(!$("input[name='feature1']").get(0).files[0]){
+          alert('商品列表图像1必须填写')
+          return
+        }
         //拿到界面上的所有数据(这一步拿到了除了content以外的所有内容)
         var fm = new FormData($('form')[0]);
         // 如果你想打印一下fm里面有哪些值，不能直接打印fm，而应该用get方法一个一个打印
         //单独把富文本内容加到FormData里面
         fm.append('content', $('.summernote1').summernote('code'));
-        // console.log(fm.get('title'));
 
         //发起一个请求
         $.post({
@@ -541,7 +521,6 @@
           processData: false,
           dataType: "json",
           success: function (obj) {
-
             if (obj.code == 0) {
 
               //成功，刷新
@@ -556,6 +535,10 @@
       //按钮的点击事件
       $('#save2').click(function (e) {
         e.preventDefault();
+        if(!$("input[name='feature5']").get(0).files[0]){
+          alert('商品列表图像1必须填写')
+          return
+        }
         //拿到界面上的所有数据(这一步拿到了除了content以外的所有内容)
         var fm = new FormData($('form')[1]);
         // 如果你想打印一下fm里面有哪些值，不能直接打印fm，而应该用get方法一个一个打印
@@ -585,6 +568,10 @@
       //按钮的点击事件
       $('#save3').click(function (e) {
         e.preventDefault();
+        if(!$("input[name='feature9']").get(0).files[0]){
+          alert('商品列表图像1必须填写')
+          return
+        }
         //拿到界面上的所有数据(这一步拿到了除了content以外的所有内容)
         var fm = new FormData($('form')[2]);
         // 如果你想打印一下fm里面有哪些值，不能直接打印fm，而应该用get方法一个一个打印
